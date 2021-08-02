@@ -1,0 +1,66 @@
+#root {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1.5fr 1.2fr 0.5fr;
+  grid-template-areas:
+    'title title title title'
+    'main main main main'
+    'main main main main'
+    'footer footer footer footer';
+  grid-gap: 0.2rem;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  grid-area: title;
+  background-color: cadetblue;
+}
+
+footer {
+  grid-area: footer;
+  background-color: darkolivegreen;
+}
+
+.sideBar {
+  grid-area: navbar;
+  display: flex;
+  flex-direction: column;
+  background-color: goldenrod;
+}
+
+.main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-areas: 'body navbar';
+  grid-gap: 0.2rem;
+  background-color: midnightblue;
+}
+
+@media only screen and (max-width: 450px) {
+  #app {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 1fr 0.4fr;
+    grid-template-areas:
+      'title'
+      'main'
+      'footer';
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1.4fr;
+    grid-template-areas:
+      'navbar'
+      'body';
+  }
+  .sideBar {
+    flex-direction: row;
+  }
+}
