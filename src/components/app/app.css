@@ -1,66 +1,159 @@
+* {
+  color: #214261;
+}
+
 #root {
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.5fr 1.5fr 1.2fr 0.5fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr auto 0.1fr;
   grid-template-areas:
-    'title title title title'
-    'main main main main'
-    'main main main main'
-    'footer footer footer footer';
-  grid-gap: 0.2rem;
+    'title'
+    'main'
+    'footer';
+  font-family: Ubuntu;
 }
 
 body {
   margin: 0;
 }
 
+h2 {
+  font-size: 1rem;
+}
+
 header {
   grid-area: title;
-  background-color: cadetblue;
+  display: grid;
+}
+
+header h2 {
+  padding-left: 7rem;
+  margin-top: 0;
+  font-size: 1rem;
+}
+
+header h1 {
+  margin-bottom: 0;
+  padding-left: 4rem;
+  font-size: 1.5rem;
+  margin-top: 4rem;
 }
 
 footer {
+  font-size: 0.8rem;
   grid-area: footer;
-  background-color: darkolivegreen;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 0.7rem;
+  margin-left: 0.7rem;
+  margin-right: 0.7rem;
 }
 
 .sideBar {
   grid-area: navbar;
   display: flex;
   flex-direction: column;
-  background-color: goldenrod;
+  justify-content: center;
 }
 
 .main {
   grid-area: main;
   display: grid;
-  grid-template-columns: 4fr 1fr;
-  grid-template-areas: 'body navbar';
-  grid-gap: 0.2rem;
-  background-color: midnightblue;
+  grid-template-columns: 1fr 4fr 1.5fr;
+  grid-template-areas: 'gap middle navbar';
 }
 
-@media only screen and (max-width: 450px) {
+a {
+  text-decoration: none;
+}
+
+.meat {
+  border: 1px solid white;
+  border-bottom: none;
+  border-right: none;
+  border-radius: 0.5rem;
+  padding: 4rem;
+  max-width: 55%;
+}
+
+.home,
+.info {
+  grid-area: middle;
+}
+
+@media only screen and (max-width: 550px) {
   #app {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 1fr 0.4fr;
+    grid-template-rows: 0.2fr auto 0.4fr;
     grid-template-areas:
       'title'
       'main'
       'footer';
   }
-}
-
-@media only screen and (max-width: 450px) {
   .main {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 1.4fr;
+    grid-template-rows: 0.3fr auto;
     grid-template-areas:
       'navbar'
-      'body';
+      'middle';
   }
   .sideBar {
+    grid-area: navbar;
     flex-direction: row;
+    flex-wrap: wrap;
   }
+  .home {
+    grid-area: middle;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .meat {
+    border: 1px solid white;
+    border-bottom: none;
+    border-right: none;
+    padding: 1rem;
+    max-width: 75%;
+  }
+  footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  footer p {
+    margin: 0;
+  }
+  header h1,
+  header h2 {
+    margin: 0;
+    padding: 0;
+    margin-top: 0.5rem;
+  }
+  header {
+    grid-area: title;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .sideBar a {
+    margin: 0.25rem;
+  }
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../../../public/fonts/Ubuntu-Regular.eot');
+  src: url('../../../public/fonts/Ubuntu-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../../public/fonts/Ubuntu-Regular.woff2') format('woff2'),
+    url('../../../public/fonts/Ubuntu-Regular.woff') format('woff'),
+    url('../../../public/fonts/Ubuntu-Regular.ttf') format('truetype'),
+    url('../../../public/fonts/Ubuntu-Regular.svg#Ubuntu-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
