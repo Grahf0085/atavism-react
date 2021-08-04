@@ -1,8 +1,22 @@
+html,
+body {
+  background-color: black;
+  -webkit-background-size: 100%;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: Ubuntu;
+}
+
+body {
+  margin: 0;
+}
+
 * {
   color: #214261;
 }
 
-#root {
+.container {
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
@@ -11,43 +25,25 @@
     'title'
     'main'
     'footer';
-  font-family: Ubuntu;
 }
 
-body {
-  margin: 0;
-}
-
-h2 {
-  font-size: 1rem;
-}
-
-header {
+.titleArea {
   grid-area: title;
   display: grid;
 }
 
-header h2 {
-  padding-left: 7rem;
-  margin-top: 0;
-  font-size: 1rem;
-}
-
-header h1 {
-  margin-bottom: 0;
-  padding-left: 4rem;
-  font-size: 1.5rem;
-  margin-top: 4rem;
-}
-
-footer {
-  font-size: 0.8rem;
+.footerArea {
   grid-area: footer;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.main {
+  grid-area: main;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  grid-gap: 0.7rem;
-  margin-left: 0.7rem;
-  margin-right: 0.7rem;
+  grid-template-columns: 1fr 4fr 1.3fr;
+  grid-template-areas: 'gap middle navbar';
 }
 
 .sideBar {
@@ -57,15 +53,15 @@ footer {
   justify-content: center;
 }
 
-.main {
-  grid-area: main;
-  display: grid;
-  grid-template-columns: 1fr 4fr 1.5fr;
-  grid-template-areas: 'gap middle navbar';
-}
-
 a {
   text-decoration: none;
+}
+
+.home,
+.info,
+.connecting,
+.FAQs {
+  grid-area: middle;
 }
 
 .meat {
@@ -77,9 +73,25 @@ a {
   max-width: 55%;
 }
 
-.home,
-.info {
-  grid-area: middle;
+p,
+li {
+  font-size: 1rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+/* 
+
+@media only screen and (max-width: 850px) {
+  .meat {
+    max-width: 85%;
+    padding: 0;
+  }
+  li {
+    margin: 0.3rem;
+  }
 }
 
 @media only screen and (max-width: 550px) {
@@ -103,7 +115,8 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .home {
+  .home,
+  .info {
     grid-area: middle;
     display: flex;
     align-items: center;
@@ -111,12 +124,19 @@ a {
     justify-content: center;
     width: 100%;
   }
+  ul,
+  ol {
+    padding-left: 0;
+  }
+  li {
+    margin: 0.7rem;
+  }
   .meat {
     border: 1px solid white;
     border-bottom: none;
     border-right: none;
     padding: 1rem;
-    max-width: 75%;
+    max-width: 80%;
   }
   footer {
     grid-area: footer;
@@ -143,7 +163,7 @@ a {
     margin: 0.25rem;
   }
 }
-
+*/
 @font-face {
   font-family: 'Ubuntu';
   src: url('../../../public/fonts/Ubuntu-Regular.eot');

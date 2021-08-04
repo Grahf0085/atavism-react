@@ -15,7 +15,7 @@ import Support from '../Support';
 import Sidebar from '../../containers/SideBar';
 import ServerInfo from '../ServerInfo';
 import backgroundFunction from '../../services/utils';
-import './app.css';
+import styles from '../app/styles.css';
 
 export default function App() {
 
@@ -24,9 +24,9 @@ export default function App() {
   });
   
   return (
-    <>
+    <section className={styles.container}>
       <Header />
-      <section className="main">
+      <section className={styles.main}>
         <Router>
           <Switch>
             <Route
@@ -69,6 +69,6 @@ export default function App() {
         </Router>
       </section>
       <Footer />
-    </>
+    </section>
   );
 }

@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import styles from '../components/app/styles.css';
 
 export default function Content() {
   return (
-    <section className="sideBar">
+    <section className={styles.sideBar}>
       <Link to="/">Home</Link>
       <Link to="/info">Server Info</Link>
       <Link to="/connecting">Connecting</Link>
