@@ -60,7 +60,8 @@ a {
 .home,
 .info,
 .connecting,
-.FAQs {
+.FAQs,
+.rules {
   grid-area: middle;
 }
 
@@ -80,6 +81,10 @@ li {
 
 h2 {
   font-size: 1.2rem;
+}
+
+li {
+  break-inside: avoid;
 }
 
 /* 

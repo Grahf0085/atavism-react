@@ -1,0 +1,18 @@
+.rulesOl {
+  column-count: 3;
+  font-display: flex;
+}
+
+.rulesLi {
+  list-style: square;
+  margin: 0.4rem;
+  list-style-position: inside;
+}
+
+.rulesMeat {
+  border: 1px solid white;
+  border-bottom: none;
+  border-right: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}

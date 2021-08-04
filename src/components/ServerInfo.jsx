@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 import React from 'react';
 import styles from '../components/app/styles.css';
-import infoStyles from './serverInfo.css';
+import infoStyles from './serverInfoStyles.css';
 
 const Info = () => {
   return ( 
