@@ -1,0 +1,19 @@
+.whatFind {
+  column-count: 1;
+  padding: 0;
+}
+
+.changedPart {
+  padding: 0.1rem;
+}
+
+.items {
+  border: solid 1px white;
+  border-bottom: none;
+  border-right: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: transparent;
+  list-style: none;
+}

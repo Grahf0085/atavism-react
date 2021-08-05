@@ -1,0 +1,44 @@
+.rulesLi {
+  list-style: square;
+  margin: 0.3rem;
+  list-style-position: inside;
+}
+
+.rulesMeat {
+  border: 1px solid white;
+  border-bottom: none;
+  border-right: none;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  max-width: 55%;
+  max-height: 15rem;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 2fr)); */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.bannedMeat {
+  border: 1px solid white;
+  border-bottom: none;
+  border-right: none;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  max-width: 55%;
+  max-height: 18rem;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 2fr)); */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 850px) {
+  .rulesMeat {
+    max-height: 27rem;
+  }
+  .bannedMeat {
+    max-height: 34rem;
+  }
+}

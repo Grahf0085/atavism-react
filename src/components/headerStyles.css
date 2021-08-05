@@ -1,0 +1,21 @@
+.subTitle {
+  padding-left: 6rem;
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.mainTitle {
+  margin-bottom: 0;
+  padding-left: 4rem;
+  font-size: 1.5rem;
+  margin-top: 4rem;
+}
+
+@media only screen and (max-width: 550px) {
+  .mainTitle,
+  .subTitle {
+    margin: 0;
+    padding: 0;
+    margin-top: 0.5rem;
+  }
+}

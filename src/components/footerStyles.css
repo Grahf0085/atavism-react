@@ -1,0 +1,10 @@
+.footerText {
+  font-size: 0.8rem;
+  margin: 1.5rem;
+}
+
+@media only screen and (max-width: 550px) {
+  .footerText {
+    margin: 0.2rem;
+  }
+}

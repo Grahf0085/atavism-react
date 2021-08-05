@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   BrowserRouter as Router,
   Route,
@@ -13,20 +13,31 @@ import Rules from '../Rules';
 import BCNM from '../BCNM';
 import Support from '../Support';
 import Sidebar from '../../containers/SideBar';
-import './app.css';
-
+import ServerInfo from '../ServerInfo';
+import backgroundFunction from '../../services/utils';
+import styles from '../app/styles.css';
 
 export default function App() {
+
+  useEffect(() => {
+    backgroundFunction();
+  });
+  
   return (
-    <>
+    <section className={styles.container}>
       <Header />
-      <section className="main">
+      <section className={styles.main}>
         <Router>
           <Switch>
             <Route
               path="/"
               exact
               render={(routerProps) => <Home {...routerProps} />}
+            />
+            <Route
+              path="/info"
+              exact
+              render={(routerProps) => <ServerInfo {...routerProps} />}
             />
             <Route
               path="/connecting"
@@ -58,6 +69,6 @@ export default function App() {
         </Router>
       </section>
       <Footer />
-    </>
+    </section>
   );
 }

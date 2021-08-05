@@ -1,0 +1,15 @@
+.connectingLi {
+  list-style: decimal;
+  list-style-position: inside;
+  margin: 0.5rem;
+}
+
+.connectingSection {
+  border: solid 1px white;
+  border-bottom: none;
+  border-right: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: transparent;
+}

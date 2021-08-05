@@ -1,0 +1,191 @@
+html,
+body {
+  background-color: black;
+  -webkit-background-size: 100%;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: Ubuntu;
+  margin: 0;
+}
+
+* {
+  color: #214261;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr auto 0.1fr;
+  grid-template-areas:
+    'title'
+    'main'
+    'footer';
+}
+
+.titleArea {
+  grid-area: title;
+  display: grid;
+}
+
+.footerArea {
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1.3fr;
+  grid-template-areas: 'gap middle navbar';
+}
+
+.sideBar {
+  grid-area: navbar;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  height: 75vh;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.home,
+.info,
+.connecting,
+.FAQs,
+.rules,
+.BCNM,
+.support {
+  grid-area: middle;
+}
+
+.meat {
+  border: 1px solid white;
+  border-bottom: none;
+  border-right: none;
+  border-radius: 0.5rem;
+  padding: 3rem;
+  max-width: 55%;
+}
+
+p,
+li {
+  font-size: 1rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+li {
+  break-inside: avoid;
+}
+
+@media only screen and (max-width: 850px) {
+  .meat {
+    max-width: 80%;
+    padding: 2rem;
+  }
+  li {
+    margin: 0.3rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr auto 0.4fr;
+    grid-template-areas:
+      'title'
+      'main'
+      'footer';
+  }
+  .main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 4fr;
+    grid-template-areas:
+      'navbar'
+      'middle';
+  }
+  .sideBar {
+    margin-top: 1rem;
+    grid-area: navbar;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .home,
+  .info,
+  .connecting,
+  .FAQs,
+  .rules,
+  .BCNM,
+  .support {
+    grid-area: middle;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  ul,
+  ol {
+    padding-left: 0;
+  }
+  li {
+    margin: 0.7rem;
+  }
+  .meat {
+    border: 1px solid white;
+    border-bottom: none;
+    border-right: none;
+    padding: 1rem;
+    max-width: 80%;
+  }
+  .footerArea {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .titleArea {
+    grid-area: title;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+  }
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../../../public/fonts/Ubuntu-Regular.eot');
+  src: url('../../../public/fonts/Ubuntu-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('../../../public/fonts/Ubuntu-Regular.woff2') format('woff2'),
+    url('../../../public/fonts/Ubuntu-Regular.woff') format('woff'),
+    url('../../../public/fonts/Ubuntu-Regular.ttf') format('truetype'),
+    url('../../../public/fonts/Ubuntu-Regular.svg#Ubuntu-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
