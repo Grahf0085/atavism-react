@@ -25,7 +25,7 @@ export default function Content() {
       </section>
       <section className={sidebarStyles.subList}>
         <h3>Links</h3>
-        <a href = "https://www.wingsxi.com/wings/">Wings</a>
+        <a href = "https://www.wingsxi.com/wings/" >Wings</a>
         <a href = "https://www.limitbreakffxi.com/">Limit Break</a>
         <a href = "https://gitlab.com/Grahf0085/atavism">Gitlab</a>
         <a href = "https://discord.gg/r78h8Bt4">Discord</a>

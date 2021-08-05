@@ -122,14 +122,19 @@ li {
       'middle';
   }
   .sideBar {
-    margin-top: 1rem;
+    /* margin-top: 1rem;
     grid-area: navbar;
     flex-direction: row;
     flex-wrap: wrap;
     height: auto;
     position: relative;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-around; */
+    grid-area: navbar;
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(50px, 1fr));
+    height: auto;
+    position: relative;
   }
   .home,
   .info,

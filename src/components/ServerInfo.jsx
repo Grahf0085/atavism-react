@@ -13,7 +13,7 @@ const Info = () => {
             <ol className={infoStyles.changedPart}>
               <li className={infoStyles.items}>Several Jobs H2H skill drastically increased</li>
               <li className={infoStyles.items}>
-                  PLD and DRK MP increased to equal RDMs.
+                  PLD and DRK MP increased to equal RDMs
               </li>
             </ol>
           </li>

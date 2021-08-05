@@ -16,9 +16,9 @@ const Footer = () => {
 
     <p className={footerStyles.footerText}>
       Special Thanks to
-      <a href="https://github.com/LandSandBoat/server"> LandSandBoat</a>,
-      <a href="https://www.wingsxi.com"> Wings</a>, and
-      <a href="https://www.limitbreakffxi.com/"> LimitBreak</a>
+      <a href="https://github.com/LandSandBoat/server" className={footerStyles.footerA}> LandSandBoat</a>,
+      <a href="https://www.wingsxi.com" className={footerStyles.footerA}> Wings</a>, and
+      <a href="https://www.limitbreakffxi.com/" className={footerStyles.footerA}> LimitBreak</a>
     </p>
   </footer>;
 };
