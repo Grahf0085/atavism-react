@@ -6,9 +6,6 @@ body {
   -o-background-size: cover;
   background-size: cover;
   font-family: Ubuntu;
-}
-
-body {
   margin: 0;
 }
 
@@ -34,9 +31,8 @@ body {
 
 .footerArea {
   grid-area: footer;
-  display: flex;
-  align-content: center;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 
 .main {
@@ -51,10 +47,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: sticky;
+  top: 0;
+  height: 75vh;
 }
 
 a {
   text-decoration: none;
+  font-size: 1rem;
 }
 
 .home,
@@ -72,7 +72,7 @@ a {
   border-bottom: none;
   border-right: none;
   border-radius: 0.5rem;
-  padding: 4rem;
+  padding: 3rem;
   max-width: 55%;
 }
 
@@ -86,16 +86,19 @@ h2 {
   margin-left: 1rem;
 }
 
+h3 {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
 li {
   break-inside: avoid;
 }
 
-/* 
-
 @media only screen and (max-width: 850px) {
   .meat {
-    max-width: 85%;
-    padding: 0;
+    max-width: 80%;
+    padding: 2rem;
   }
   li {
     margin: 0.3rem;
@@ -103,7 +106,7 @@ li {
 }
 
 @media only screen and (max-width: 550px) {
-  #app {
+  .container {
     grid-template-columns: 1fr;
     grid-template-rows: 0.2fr auto 0.4fr;
     grid-template-areas:
@@ -113,18 +116,28 @@ li {
   }
   .main {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.3fr auto;
+    grid-template-rows: 0.1fr 4fr;
     grid-template-areas:
       'navbar'
       'middle';
   }
   .sideBar {
+    margin-top: 1rem;
     grid-area: navbar;
     flex-direction: row;
     flex-wrap: wrap;
+    height: auto;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
   }
   .home,
-  .info {
+  .info,
+  .connecting,
+  .FAQs,
+  .rules,
+  .BCNM,
+  .support {
     grid-area: middle;
     display: flex;
     align-items: center;
@@ -146,32 +159,23 @@ li {
     padding: 1rem;
     max-width: 80%;
   }
-  footer {
+  .footerArea {
     grid-area: footer;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
   }
-  footer p {
-    margin: 0;
-  }
-  header h1,
-  header h2 {
-    margin: 0;
-    padding: 0;
-    margin-top: 0.5rem;
-  }
-  header {
+
+  .titleArea {
     grid-area: title;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-  }
-  .sideBar a {
-    margin: 0.25rem;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
   }
 }
-*/
+
 @font-face {
   font-family: 'Ubuntu';
   src: url('../../../public/fonts/Ubuntu-Regular.eot');
