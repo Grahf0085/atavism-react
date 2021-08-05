@@ -14,7 +14,7 @@
   .subList {
     border: none;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     width: 100%;
     padding: 0;
@@ -22,7 +22,7 @@
     flex-wrap: wrap;
   }
 
-  h3 + a {
+  .mobileA {
     margin: 0.3rem;
   }
 }

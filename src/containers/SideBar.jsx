@@ -7,28 +7,28 @@ export default function Content() {
   return (
     <section className={styles.sideBar}>
       <section className={sidebarStyles.subList}>
-        <Link to="/">Home</Link>
-        <Link to="/info">Server Info</Link>
-        <Link to="/connecting">Connecting</Link>
-        <Link to="/FAQs">FAQs</Link>
-        <Link to="/Rules">Rules</Link>
-        <Link to="/BCNM-KSNM-ENM">BCNM/KSNM/ENM</Link>
-        <Link to="/Support">Support</Link>
+        <Link to="/" className={sidebarStyles.mobileA}>Home</Link>
+        <Link to="/info" className={sidebarStyles.mobileA}>Server Info</Link>
+        <Link to="/connecting" className={sidebarStyles.mobileA}>Connecting</Link>
+        <Link to="/FAQs" className={sidebarStyles.mobileA}>FAQs</Link>
+        <Link to="/Rules" className={sidebarStyles.mobileA}>Rules</Link>
+        <Link to="/BCNM-KSNM-ENM" className={sidebarStyles.mobileA}>BCNM/KSNM/ENM</Link>
+        <Link to="/Support" className={sidebarStyles.mobileA}>Support</Link>
       </section>
       <section className={sidebarStyles.subList}>
         <h3>Tools</h3>
-        <a href = "https://www.pyogenes.com/ffxi/timer/v2.html">Time Info.</a>
-        <a href = "http://ffxi-stat-calc.sourceforge.net/cgi-bin/ffxistats.cgi">Stats Calculator</a>
-        <a href = "https://flippantry.com/skillchain/">Skill Chains</a>
-        <a href = "http://campsitarus.blogspot.com/">Campsitarus</a>
-        <a href = "http://ffxi-atlas.mageringnetwork.com/">Vana&apos;diel Atlas</a>
+        <a href = "https://www.pyogenes.com/ffxi/timer/v2.html" className={sidebarStyles.mobileA}>Time Info.</a>
+        <a href = "http://ffxi-stat-calc.sourceforge.net/cgi-bin/ffxistats.cgi" className={sidebarStyles.mobileA}>Stats Calculator</a>
+        <a href = "https://flippantry.com/skillchain/" className={sidebarStyles.mobileA}>Skill Chains</a>
+        <a href = "http://campsitarus.blogspot.com/" className={sidebarStyles.mobileA}>Campsitarus</a>
+        <a href = "http://ffxi-atlas.mageringnetwork.com/" className={sidebarStyles.mobileA}>Vana&apos;diel Atlas</a>
       </section>
       <section className={sidebarStyles.subList}>
         <h3>Links</h3>
-        <a href = "https://www.wingsxi.com/wings/" >Wings</a>
-        <a href = "https://www.limitbreakffxi.com/">Limit Break</a>
-        <a href = "https://gitlab.com/Grahf0085/atavism">Gitlab</a>
-        <a href = "https://discord.gg/r78h8Bt4">Discord</a>
+        <a href = "https://www.wingsxi.com/wings/" className={sidebarStyles.mobileA}>Wings</a>
+        <a href = "https://www.limitbreakffxi.com/" className={sidebarStyles.mobileA}>Limit Break</a>
+        <a href = "https://gitlab.com/Grahf0085/atavism" className={sidebarStyles.mobileA}>Gitlab</a>
+        <a href = "https://discord.gg/r78h8Bt4" className={sidebarStyles.mobileA}>Discord</a>
       </section>
     </section>
   );
