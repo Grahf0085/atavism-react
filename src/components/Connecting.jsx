@@ -5,10 +5,11 @@ import connectingStyles from './connectingStyles.css';
 
 const Connecting = () => {
   return (
-    <div className={styles.connecting}>
+    <section className={styles.connecting}>
       <h2>Connecting</h2>
-      <div className={styles.meat}>
-        <ol className={connectingStyles.connectingSection}>Linux (tested on Arch with wine 5.0)
+      <section className={styles.meat}>
+        <h2>Linux (tested on Arch with wine 5.0)</h2>
+        <ol className={connectingStyles.connectingSection}>
           <li className={connectingStyles.connectingLi}>Install wine and lutris</li>
           <li className={connectingStyles.connectingLi}>Download Installer Here: LINK TO COME</li>
           <li className={connectingStyles.connectingLi}>Install.......what file to RUN?!?!!?</li>
@@ -24,12 +25,13 @@ const Connecting = () => {
             <li className={connectingStyles.connectingLi}>Launch Game</li>
           </ol>
         </ol>
-        <ul className={connectingStyles.connectingSection}>Windows
+        <h2>Windows</h2>
+        <ul className={connectingStyles.connectingSection}>
           <li className={connectingStyles.connectingLi}>Windows should not pose any additonal problems</li>
           <li className={connectingStyles.connectingLi}>You&apos;re welcome to use Ashita or Windower.  Just be sure you&apos;re only using approved addons from the rules section</li>
         </ul>
-      </div>
-    </div>
+      </section>
+    </section>
   );
 };
 

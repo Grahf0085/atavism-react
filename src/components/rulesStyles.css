@@ -1,11 +1,10 @@
 .rulesOl {
   column-count: 3;
-  font-display: flex;
 }
 
 .rulesLi {
   list-style: square;
-  margin: 0.4rem;
+  margin: 0.3rem;
   list-style-position: inside;
 }
 

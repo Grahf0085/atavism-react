@@ -8,7 +8,7 @@ const FAQs = () => {
     <section className={styles.FAQs}>
       <h2>FAQs</h2>
       <section className={styles.meat}>
-        <h2>Why a COP &quot;era&quot; server when there are four other &quot;era&quot; servers?</h2>
+        <h2>Why a COP &quot;era&quot; server? There are other &quot;era&quot; servers?</h2>
         <section className={faqsStyles.faqsMeat}>
           <p> Vanilla FFXI provided the impossible task to beat the Shadow Lord at level 50 by forcing groups to combine melee and magic damage dealers.
             Around the release of ROTZ the level cap was steadily raised to 75.
@@ -19,7 +19,7 @@ const FAQs = () => {
             player. After COP FFXI inroduced instanced zones (salvage), made melee burn, blm burn, smn burn, and mnk burn a more normal leveling
             experience, allowed for players of all levels and all jobs to participate in events together(beseiged), and added jobs that filled
             multiple roles (to varying degrees) in a party. In short, it made the game flatter in the tradition of WoW. I say all this to point
-            out why COP is different than the expansions that followed.
+            out why COP is different than the expansions that followed. There are no other COP servers.
           </p>
         </section>
         <h2>Who should play on this server?</h2>

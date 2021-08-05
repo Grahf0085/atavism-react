@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 import React from 'react';
 import styles from '../components/app/styles.css';
 import infoStyles from './serverInfoStyles.css';
@@ -9,7 +8,8 @@ const Info = () => {
       <h2>What You Will Find Here</h2>
       <section className={styles.meat}>
         <ul className={infoStyles.whatFind}>
-          <li className={infoStyles.items}>Jobs
+          <h2>Jobs</h2>
+          <li className={infoStyles.items}>
             <ol className={infoStyles.changedPart}>
               <li className={infoStyles.items}>Several Jobs H2H skill drastically increased</li>
               <li className={infoStyles.items}>
@@ -17,14 +17,16 @@ const Info = () => {
               </li>
             </ol>
           </li>
-          <li className={infoStyles.items}>Meta
+          <h2>Meta</h2>
+          <li className={infoStyles.items}>
             <ol className={infoStyles.changedPart}>
               <li className={infoStyles.items}>No Dual Boxing At This Time</li>
               <li className={infoStyles.items}>Level Sync: 10</li>
               <li className={infoStyles.items}>No Global Yell</li>
             </ol>
           </li>
-          <li className={infoStyles.items}>Game Play
+          <h2>Game Play</h2>
+          <li className={infoStyles.items}>
             <ol className={infoStyles.changedPart}>
               <li className={infoStyles.items}>Land Kings are Force Pop</li>
               <li className={infoStyles.items}>Dia/Bio Overwrite Works Both Ways</li>

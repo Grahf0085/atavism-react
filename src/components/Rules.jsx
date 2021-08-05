@@ -10,10 +10,12 @@ const Rules = () => {
         <h2>General</h2>
         <section className={rulesStyles.rulesMeat}>
           <ol className={rulesStyles.rulesOl}>
-            <li className={rulesStyles.rulesLi}>It&apos;s just a game. Don&apos;t cheat</li>
+            <li className={rulesStyles.rulesLi}>It&apos;s just a game</li>
+            <li className={rulesStyles.rulesLi}>Don&apos;t cheat</li>
             <li className={rulesStyles.rulesLi}>Have Fun</li>
             <li className={rulesStyles.rulesLi}>Be respectful</li>
-            <li className={rulesStyles.rulesLi}>Play Together - unless you&apos;re a BST or noob</li>
+            <li className={rulesStyles.rulesLi}>Play Together</li>
+            <li className={rulesStyles.rulesLi}>Unless you&apos;re a BST or noob</li>
             <li className={rulesStyles.rulesLi}>No real money trade</li>
             <li className={rulesStyles.rulesLi}>No exploiting bugs. Just report it in the discord</li>
             <li className={rulesStyles.rulesLi}>No monster player killing</li>

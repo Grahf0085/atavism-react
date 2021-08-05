@@ -61,7 +61,9 @@ a {
 .info,
 .connecting,
 .FAQs,
-.rules {
+.rules,
+.BCNM,
+.support {
   grid-area: middle;
 }
 
@@ -81,6 +83,7 @@ li {
 
 h2 {
   font-size: 1.2rem;
+  margin-left: 1rem;
 }
 
 li {
