@@ -24,7 +24,7 @@ const FAQs = () => {
         </section>
         <h2>Who should play on this server?</h2>
         <section className={faqsStyles.faqsMeat}>
-          <p>Anyone who thinks FFXI was at it&apos;s best during COP. Anyone who wants to explore a old school game. Sadists</p>
+          <p>Anyone who thinks FFXI was at it&apos;s best during COP. Anyone who wants to explore an old school MMO game. Sadists</p>
         </section>
         <h2>What kind of server is this hosted on?</h2>
         <section className={faqsStyles.faqsMeat}>
@@ -39,7 +39,7 @@ const FAQs = () => {
         </section>
         <h2>How often will the server be down?</h2>
         <section className={faqsStyles.faqsMeat}>
-          <p>Besides the occassional power outage the server will be restarted at least weekly. A one hour warning will be posted before restarts.</p>
+          <p>Besides the occassional power outage the server will be restarted at least weekly. An one hour warning will be posted before restarts.</p>
         </section>
       </section>
     </section>

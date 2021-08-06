@@ -12,7 +12,7 @@ const Support = () => {
          status (your character will be unable to move or otherwise act) for 20 minutes. After a 20 minute wait your toon will be teleported back to it&apos;s home point. Anyone
          abusing this command could be punished. This command cannot be cancelled once triggered.
         </p>
-        <h2>Game Hung or Crashed Curing a Cutscene/Dialogue? Type &quot;!release&quot;</h2>
+        <h2>Game Hung or Crashed During a Cutscene/Dialogue? Type &quot;!release&quot;</h2>
         <p>If a cutscene or dialogue is frozen it might be possible to skip the cutscene by using the &quot;!release&quot; command. Not guaranteed to work.
         </p>
         <h2>Player Harassed You? Use /blacklist</h2>
