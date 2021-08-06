@@ -24,7 +24,7 @@ const FAQs = () => {
         </section>
         <h2>Who should play on this server?</h2>
         <section className={faqsStyles.faqsMeat}>
-          <p>Anyone who thinks FFXI was at it&apos;s best during COP.</p>
+          <p>Anyone who thinks FFXI was at it&apos;s best during COP. Anyone who wants to explore a old school game. Sadists</p>
         </section>
         <h2>What kind of server is this hosted on?</h2>
         <section className={faqsStyles.faqsMeat}>
