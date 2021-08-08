@@ -16,6 +16,9 @@ export default function Content() {
         <Link to="/Support" className={sidebarStyles.mobileA}>Support</Link>
       </section>
       <section className={sidebarStyles.subList}>
+        <Link to="/adventurers" className={sidebarStyles.mobileA}>Who&apos;s Online</Link>
+      </section>
+      <section className={sidebarStyles.subList}>
         <h3>Tools</h3>
         <a href = "https://www.pyogenes.com/ffxi/timer/v2.html" className={sidebarStyles.mobileA}>Time Info.</a>
         <a href = "http://ffxi-stat-calc.sourceforge.net/cgi-bin/ffxistats.cgi" className={sidebarStyles.mobileA}>Stats Calculator</a>
@@ -28,7 +31,7 @@ export default function Content() {
         <a href = "https://www.wingsxi.com/wings/" className={sidebarStyles.mobileA}>Wings</a>
         <a href = "https://www.limitbreakffxi.com/" className={sidebarStyles.mobileA}>Limit Break</a>
         <a href = "https://gitlab.com/Grahf0085/atavism" className={sidebarStyles.mobileA}>Gitlab</a>
-        <a href = "https://discord.gg/r78h8Bt4" className={sidebarStyles.mobileA}>Discord</a>
+        <a href = "https://discord.gg/D8urYjmhDA" className={sidebarStyles.mobileA}>Discord</a>
       </section>
     </section>
   );

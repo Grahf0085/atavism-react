@@ -1,29 +1,35 @@
-import React, { useState } from 'reaact';
+import React, { useState } from 'react';
 import { getAdventurerList } from '../state/adventurers';
 import Adventurer from './Adventurer';
+import styles from '../components/app/styles.css';
+import adventureListStyles from './adventurelist.css';
 
 const AdventurerList = () => {
 
   const [page, setPage] = useState(1);
   const { adventurers, loading } = getAdventurerList(page);
 
-  if(loading) return <h1>Loading List...</h1>;
+  if(loading) return <h1>Loading Adventurers...</h1>;
 
-  const adventurerElements = adventurers.map((oneAdventurer) => ( //right id????
-    <li key={oneAdventurer.id}> 
+  const adventurerElements = adventurers.map((oneAdventurer) => (
+    <li key={oneAdventurer.id} className={adventureListStyles.adventurerLi}> 
       <Adventurer {...oneAdventurer} />
     </li>
   ));
 
   return (
-    <>
-      <button disabled={page <= 1} onClick={() => setPage((prevPage) => 
-        prevPage - 1)}>&lt;</button>
-      {page}
-      <button disabled={adventurers.length < 3} onClick={() => 
-        setPage((prevPage) => prevPage + 1)}>&gt;</button>
-      <ul>{adventurerElements}</ul>
-    </>
+    <section className={styles.adventurerList}>
+      <h2>Online</h2>
+      <section className={adventureListStyles.listMeat}>
+        <ul className={adventureListStyles.adventurerColumns}>{adventurerElements}</ul>
+        <section>
+          <button className={adventureListStyles.pagingButton} disabled={page <= 1} onClick={() => setPage((prevPage) => 
+            prevPage - 1)}>&lt;</button>
+          <button className={adventureListStyles.pagingButton} disabled={adventurers.length < 50} onClick={() => 
+            setPage((prevPage) => prevPage + 1)}>&gt;</button>
+        </section>
+      </section>
+    </section>
   );
 
 };

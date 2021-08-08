@@ -14,8 +14,9 @@ import BCNM from '../BCNM';
 import Support from '../Support';
 import Sidebar from '../../containers/SideBar';
 import ServerInfo from '../ServerInfo';
-import backgroundFunction from '../../services/utils';
+import { backgroundFunction } from '../../services/utils';
 import styles from '../app/styles.css';
+import AdventurerList from '../AdventurerList';
 
 export default function App() {
 
@@ -63,6 +64,11 @@ export default function App() {
               path="/support"
               exact
               render={(routerProps) => <Support {...routerProps} />}
+            />
+            <Route
+              path="/adventurers"
+              exact
+              render={(routerProps) => <AdventurerList {...routerProps} />}
             />
           </Switch>
           <Sidebar />

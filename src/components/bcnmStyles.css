@@ -6,6 +6,20 @@
   padding: 4rem;
   max-width: 55%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   text-align: center;
+}
+
+@media only screen and (max-width: 850px) {
+  .bcnmMeat {
+    max-width: 80%;
+    padding: 2rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .bcnmMeat {
+    padding: 1rem;
+    max-width: 80%;
+  }
 }

@@ -1,0 +1,23 @@
+.oneItem {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(2rem, 1fr));
+  align-items: center;
+}
+
+
+/* @media only screen and (max-width: 550px) {
+  .oneItem {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr auto 0.5fr;
+    grid-template-areas:
+      'name'
+      'picture'
+      'job';
+  }
+} */
+
+figure {
+  margin-left: 0;
+  text-align:justify;
+}
