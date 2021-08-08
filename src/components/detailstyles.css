@@ -1,0 +1,23 @@
+.bastok {
+  Background-image: url('../images/bastok.webp');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 4rem;
+  height: 4rem;
+}
+
+.sandoria {
+  Background-image: url('../images/sandoria.webp');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 4rem;
+  height: 4rem;
+}
+
+.windurst {
+  Background-image: url('../images/windurst.webp');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 4rem;
+  height: 4rem;
+}

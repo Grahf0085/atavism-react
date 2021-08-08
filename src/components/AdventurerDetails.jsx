@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { getAdventurerDetails } from '../state/adventurers';
 import { formatAdventurer, advImage, jobConverter } from '../services/utils';
 import titles from '../services/titles';
-// import detailstyles from './detailstyles.css';
+import detailstyles from './detailstyles.css';
 
 
 const AdventurerDetails = () => {
@@ -29,32 +29,11 @@ const AdventurerDetails = () => {
         <h2>{details.name}</h2>
         <h2>{title}</h2>
         {details.subJob ? <h2>{mJob}{details.mainLevel} / {sJob}{details.subLevel}</h2> : <h2>{mJob}{details.mainLevel}</h2>}
-        <section 
-          style={{
-            backgroundImage: 'url(../bastok.jpg)',
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: 'contain',
-            width: '3rem',
-            height: '3rem'
-          }}>
+        <section className={detailstyles.bastok}>
         </section>
-        <section 
-          style={{
-            backgroundImage: 'url(./sandoria.jpg)',
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: 'contain',
-            width: '3rem',
-            height: '3rem'
-          }}>
+        <section className={detailstyles.sandoria}>
         </section>
-        <section 
-          style={{
-            backgroundImage: 'url(../../../public/nations/windurst.jpg)',
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: 'contain',
-            width: '3rem',
-            height: '3rem'
-          }}>
+        <section className={detailstyles.windurst}>
         </section>
         <p>{details.rankBastok}</p>
         <p>{details.rankSandoria}</p>
