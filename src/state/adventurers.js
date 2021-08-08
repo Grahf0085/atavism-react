@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { fetchAllAdventurers, fetchDetails } from '../services/atavismAPI';
+import { fetchAllAdventurers, fetchDetails, fetchNumberOnline } from '../services/atavismAPI';
 
 export const getAdventurerList = (page) => {
 
@@ -29,4 +29,18 @@ export const getAdventurerDetails = (name) => {
 
   return { details, loading };
 
+};
+
+export const getNumberOnline = () => {
+
+  const [loading, setLoading] = useState(true);
+  const [numberOnline, setNumberOnline] = useState([]);
+
+  useEffect(() => {
+    fetchNumberOnline()
+      .then(setNumberOnline)
+      .finally(() => setLoading(false));
+  });
+
+  return { numberOnline, loading };
 };

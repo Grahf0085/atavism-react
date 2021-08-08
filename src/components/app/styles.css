@@ -27,6 +27,11 @@ body {
 .titleArea {
   grid-area: title;
   display: grid;
+  grid-template-columns: 0.2fr 1fr 13rem;
+  grid-template-rows: 1fr 0.5fr;
+  grid-template-areas: 
+  'main main online'
+  'sub sub sub';
 }
 
 .footerArea {
@@ -62,7 +67,7 @@ a {
 .connecting,
 .FAQs,
 .rules,
-.BCNM,
+.working,
 .support,
 .adventurerList {
   grid-area: middle;
@@ -142,7 +147,7 @@ li {
   .connecting,
   .FAQs,
   .rules,
-  .BCNM,
+  .working,
   .support,
   .adventurerList {
     grid-area: middle;
@@ -180,6 +185,7 @@ li {
     align-items: center;
     margin-left: 0.3rem;
     margin-right: 0.3rem;
+    flex-wrap: wrap;
   }
 }
 

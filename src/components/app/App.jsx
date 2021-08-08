@@ -10,7 +10,7 @@ import Home from '../Home';
 import Connecting from '../Connecting';
 import FAQs from '../FAQS';
 import Rules from '../Rules';
-import BCNM from '../BCNM';
+import Working from '../Working';
 import Support from '../Support';
 import Sidebar from '../../containers/SideBar';
 import ServerInfo from '../ServerInfo';
@@ -58,9 +58,9 @@ export default function App() {
               render={(routerProps) => <Rules {...routerProps} />}
             />
             <Route
-              path="/BCNM-KSNM-ENM"
+              path="/working"
               exact
-              render={(routerProps) => <BCNM {...routerProps} />}
+              render={(routerProps) => <Working {...routerProps} />}
             />
             <Route
               path="/support"

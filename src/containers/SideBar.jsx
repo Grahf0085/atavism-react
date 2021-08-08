@@ -11,9 +11,9 @@ export default function Content() {
         <Link to="/info" className={sidebarStyles.mobileA}>Server Info</Link>
         <Link to="/connecting" className={sidebarStyles.mobileA}>Connecting</Link>
         <Link to="/FAQs" className={sidebarStyles.mobileA}>FAQs</Link>
-        <Link to="/Rules" className={sidebarStyles.mobileA}>Rules</Link>
-        <Link to="/BCNM-KSNM-ENM" className={sidebarStyles.mobileA}>BCNM/KSNM/ENM</Link>
-        <Link to="/Support" className={sidebarStyles.mobileA}>Support</Link>
+        <Link to="/rules" className={sidebarStyles.mobileA}>Rules</Link>
+        <Link to="/working" className={sidebarStyles.mobileA}>Working Content</Link>
+        <Link to="/support" className={sidebarStyles.mobileA}>Support</Link>
       </section>
       <section className={sidebarStyles.subList}>
         <Link to="/adventurers" className={sidebarStyles.mobileA}>Who&apos;s Online</Link>

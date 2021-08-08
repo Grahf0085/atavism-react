@@ -1,12 +1,18 @@
 import React from 'react';
 import styles from '../components/app/styles.css';
-import bcnmStyles from './bcnmStyles.css';
+import workingStyles from './workingStyles.css';
 
-const BCNM = () => {
+const Working = () => {
   return (
-    <section className={styles.BCNM}>
-      <h2>Working BCNMs, KSNMs, and ENMs</h2>
-      <section className={bcnmStyles.bcnmMeat}>
+    <section className={styles.working}>
+      <h2>Missions</h2>
+      <section className={workingStyles.bcnmMeat}>
+        <h2>Nation Missions: All Working</h2>
+        <h2>Zilart Mission: ZM1 to ZM13</h2>
+        <h2>COP Mission: PM1 to PM5-2</h2>
+      </section>
+      <h2>BCNMs, KSNMs, and ENMs</h2>
+      <section className={workingStyles.bcnmMeat}>
         <section>
           <h2>Balgas Dais</h2>
           <p>Treasure and Tribulations (BS50)</p>
@@ -52,4 +58,4 @@ const BCNM = () => {
   );
 };
 
-export default BCNM;
+export default Working;
