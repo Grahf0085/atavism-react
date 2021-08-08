@@ -31,7 +31,7 @@ const AdventurerDetails = () => {
         {details.subJob ? <h2>{mJob}{details.mainLevel} / {sJob}{details.subLevel}</h2> : <h2>{mJob}{details.mainLevel}</h2>}
         <section 
           style={{
-            backgroundImage: 'url(../../public/nations/bastok.jpg)',
+            backgroundImage: 'url(/bastok.jpg)',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'contain',
             width: '3rem',
@@ -40,7 +40,7 @@ const AdventurerDetails = () => {
         </section>
         <section 
           style={{
-            backgroundImage: 'url(../../public/nations/sandoria.jpg)',
+            backgroundImage: 'url(/sandoria.jpg)',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'contain',
             width: '3rem',
@@ -49,7 +49,7 @@ const AdventurerDetails = () => {
         </section>
         <section 
           style={{
-            backgroundImage: 'url(../../public/nations/windurst.jpg)',
+            backgroundImage: 'url(/windurst.jpg)',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'contain',
             width: '3rem',
