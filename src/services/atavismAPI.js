@@ -7,6 +7,11 @@ export const fetchAllAdventurers = async (page) => {
 export const fetchDetails = async (name) => {
   const res = await fetch(`http://127.0.0.1:7890/api/toon/${name}`);
   const json = await res.json();
-  console.log(json);
   return json;
+};
+
+export const fetchNumberOnline = async () => {
+  const res = await fetch('http://127.0.0.1:7890/api/toons'); 
+  const json = await res.json();
+  return json.length;
 };

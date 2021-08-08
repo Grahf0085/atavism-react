@@ -2,6 +2,7 @@
   padding-left: 6rem;
   margin-top: 0;
   font-size: 1.2rem;
+  grid-area: sub
 }
 
 .mainTitle {
@@ -9,6 +10,12 @@
   padding-left: 4rem;
   font-size: 1.5rem;
   margin-top: 4rem;
+  grid-area: main;
+}
+
+.numberOnline {
+  align-self: flex-end;
+  grid-area: online;
 }
 
 @media only screen and (max-width: 550px) {
@@ -20,6 +27,10 @@
   }
 
   .subTitle {
+    font-size: 1.1rem;
+  }
+
+  .numberOnline {
     font-size: 1.1rem;
   }
 }
