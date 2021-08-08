@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { getAdventurerDetails } from '../state/adventurers';
 import { formatAdventurer, advImage, jobConverter } from '../services/utils';
 import titles from '../services/titles';
-import detailstyles from './detailstyles.css';
+// import detailstyles from './detailstyles.css';
 
 
 const AdventurerDetails = () => {
@@ -31,7 +31,7 @@ const AdventurerDetails = () => {
         {details.subJob ? <h2>{mJob}{details.mainLevel} / {sJob}{details.subLevel}</h2> : <h2>{mJob}{details.mainLevel}</h2>}
         <section 
           style={{
-            backgroundImage: 'url(/bastok.jpg)',
+            backgroundImage: 'url(../bastok.jpg)',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'contain',
             width: '3rem',
@@ -40,7 +40,7 @@ const AdventurerDetails = () => {
         </section>
         <section 
           style={{
-            backgroundImage: 'url(/sandoria.jpg)',
+            backgroundImage: 'url(./sandoria.jpg)',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'contain',
             width: '3rem',
@@ -49,7 +49,7 @@ const AdventurerDetails = () => {
         </section>
         <section 
           style={{
-            backgroundImage: 'url(/windurst.jpg)',
+            backgroundImage: 'url(../../../public/nations/windurst.jpg)',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'contain',
             width: '3rem',
