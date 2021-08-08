@@ -37,8 +37,8 @@ Adventurer.propTypes = {
   subJob: PropTypes.number,
   mainLevel: PropTypes.number.isRequired,
   subLevel: PropTypes.number,
-  face: PropTypes.string.isRequired,
-  race: PropTypes.string.isRequired
+  face: PropTypes.number.isRequired,
+  race: PropTypes.number.isRequired
 };
 
 export default Adventurer;

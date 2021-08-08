@@ -1,4 +1,5 @@
 import backgrounds from './backgrounds.js';
+// import nations from './nations.js';
 
 export function backgroundFunction() {
   const randIndex = Math.floor(Math.random() * backgrounds.length);

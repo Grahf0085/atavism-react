@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { getAdventurerDetails } from '../state/adventurers';
 import { formatAdventurer, advImage, jobConverter } from '../services/utils';
 import titles from '../services/titles';
+import detailstyles from './detailstyles.css';
 
 
 const AdventurerDetails = () => {
@@ -28,9 +29,33 @@ const AdventurerDetails = () => {
         <h2>{details.name}</h2>
         <h2>{title}</h2>
         {details.subJob ? <h2>{mJob}{details.mainLevel} / {sJob}{details.subLevel}</h2> : <h2>{mJob}{details.mainLevel}</h2>}
-        <img src="../public/nations/bastok.jpg" alt="bastok" />
-        <img src="../public/nations/sandoria.jpg" alt="sandoria" />
-        <img src="../public/nations/windurst.jpg" alt="windurst" />
+        <section 
+          style={{
+            backgroundImage: 'url(../../public/nations/bastok.jpg)',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'contain',
+            width: '3rem',
+            height: '3rem'
+          }}>
+        </section>
+        <section 
+          style={{
+            backgroundImage: 'url(../../public/nations/sandoria.jpg)',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'contain',
+            width: '3rem',
+            height: '3rem'
+          }}>
+        </section>
+        <section 
+          style={{
+            backgroundImage: 'url(../../public/nations/windurst.jpg)',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'contain',
+            width: '3rem',
+            height: '3rem'
+          }}>
+        </section>
         <p>{details.rankBastok}</p>
         <p>{details.rankSandoria}</p>
         <p>{details.rankWindurst}</p>
