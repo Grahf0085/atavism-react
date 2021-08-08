@@ -28,9 +28,9 @@ const AdventurerDetails = () => {
         <h2>{details.name}</h2>
         <h2>{title}</h2>
         {details.subJob ? <h2>{mJob}{details.mainLevel} / {sJob}{details.subLevel}</h2> : <h2>{mJob}{details.mainLevel}</h2>}
-        <img src="../../public/nation-images/bastok.webp" alt="bastok"></img>
-        <img src="../../public/nation-images/sandoria.webp" alt="sandoria"></img>
-        <img src="../../public/nation-images/windurst.webp" alt="windurst"></img>
+        <img src="../../public/nations/bastok.jpg" alt="bastok"></img>
+        <img src="../../public/nations/sandoria.jpg" alt="sandoria"></img>
+        <img src="../../public/nations/windurst.jpg" alt="windurst"></img>
         <p>{details.rankBastok}</p>
         <p>{details.rankSandoria}</p>
         <p>{details.rankWindurst}</p>
