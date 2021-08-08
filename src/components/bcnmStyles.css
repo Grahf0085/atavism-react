@@ -3,7 +3,7 @@
   border-bottom: none;
   border-right: none;
   border-radius: 0.5rem;
-  padding: 4rem;
+  padding: 3rem;
   max-width: 55%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));

@@ -17,6 +17,8 @@ import ServerInfo from '../ServerInfo';
 import { backgroundFunction } from '../../services/utils';
 import styles from '../app/styles.css';
 import AdventurerList from '../AdventurerList';
+import AdventurerDetails from '../AdventurerDetails';
+
 
 export default function App() {
 
@@ -69,6 +71,11 @@ export default function App() {
               path="/adventurers"
               exact
               render={(routerProps) => <AdventurerList {...routerProps} />}
+            />
+            <Route
+              path="/adventurer/:name"
+              exact
+              render={(routerProps) => <AdventurerDetails {...routerProps} />}
             />
           </Switch>
           <Sidebar />
