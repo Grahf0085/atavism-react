@@ -25,7 +25,7 @@ export const getAdventurerDetails = (name) => {
     fetchDetails(name)
       .then(setDetails)
       .finally(() => setLoading(false));
-  });
+  }, [name]);
 
   return { details, loading };
 
