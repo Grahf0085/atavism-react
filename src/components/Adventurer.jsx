@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import adventurersyles from './adventurerstyles.css';
 import { jobConverter, formatAdventurer, advImage } from '../services/utils';
+import { Link } from 'react-router-dom';
 
 const Adventurer = ({ name, mainJob, mainLevel, subJob, subLevel, face, race }) => {
 
@@ -12,15 +13,17 @@ const Adventurer = ({ name, mainJob, mainLevel, subJob, subLevel, face, race }) 
 
   if(subJob) {
     return <section className={adventurersyles.oneItem}>
-      <figure>
-        <figcaption>
-          <h3>{name}</h3>
-        </figcaption>
-        <img src={imageUrl} alt={name} height="75rem" width="75rem" />
-        <figcaption>
-          <h3>{mJob}{mainLevel} / {sJob}{subLevel}</h3>
-        </figcaption>
-      </figure>
+      <Link to={`/adventurer/${name}`}>
+        <figure>
+          <figcaption>
+            <h3>{name}</h3>
+          </figcaption>
+          <img src={imageUrl} alt={name} height="75rem" width="75rem" />
+          <figcaption>
+            <h3>{mJob}{mainLevel} / {sJob}{subLevel}</h3>
+          </figcaption>
+        </figure>
+      </Link>
       
       {/* <img src={imageUrl} alt={name} height="65rem" width="65rem"></img>
       <h3>{name}</h3>
@@ -28,9 +31,17 @@ const Adventurer = ({ name, mainJob, mainLevel, subJob, subLevel, face, race }) 
     </section>;
   } else {
     return <section className={adventurersyles.oneItem}>
-      <img src={imageUrl} alt={name}></img>
-      <h3>{name}</h3>
-      <h3>{mJob}{mainLevel}</h3>
+      <Link to={`/adventurer/${name}`}>
+        <figure>
+          <figcaption>
+            <h3>{name}</h3>
+          </figcaption>
+          <img src={imageUrl} alt={name} height="75rem" width="75rem" />
+          <figcaption>
+            <h3>{mJob}{mainLevel}</h3>
+          </figcaption>
+        </figure>
+      </Link>
     </section>;
   }
 

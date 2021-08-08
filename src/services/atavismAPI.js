@@ -3,3 +3,10 @@ export const fetchAllAdventurers = async (page) => {
   const json = await res.json();
   return json.slice((page - 1) * 50, page * 50);
 };
+
+export const fetchDetails = async (name) => {
+  const res = await fetch(`http://127.0.0.1:7890/api/toon/${name}`);
+  const json = await res.json();
+  console.log(json);
+  return json;
+};
