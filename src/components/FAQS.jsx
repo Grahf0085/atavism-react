@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from '../components/app/styles.css';
-import faqsStyles from './faqsStyles.css';
+import styles from '../styles/styles.css';
+import faqsStyles from '../styles/faqsStyles.css';
 
 
 const FAQs = () => {

@@ -15,7 +15,7 @@ import Support from '../Support';
 import Sidebar from '../../containers/SideBar';
 import ServerInfo from '../ServerInfo';
 import { backgroundFunction } from '../../services/utils';
-import styles from '../app/styles.css';
+import styles from '../../styles/styles.css';
 import AdventurerList from '../AdventurerList';
 import AdventurerDetails from '../AdventurerDetails';
 

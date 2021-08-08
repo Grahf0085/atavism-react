@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import adventurersyles from './adventurerstyles.css';
+import adventurersyles from '../styles/adventurerstyles.css';
 import { jobConverter, formatAdventurer, advImage } from '../services/utils';
 import { Link } from 'react-router-dom';
 

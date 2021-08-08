@@ -1,7 +1,7 @@
 import React from 'react';
 import { getNumberOnline } from '../state/adventurers';
-import headerStyles from './headerStyles.css';
-import styles from '../components/app/styles.css';
+import headerStyles from '../styles/headerStyles.css';
+import styles from '../styles/styles.css';
 
 
 const Header = () => {

@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { getAdventurerDetails } from '../state/adventurers';
 import { formatAdventurer, advImage, jobConverter } from '../services/utils';
 import titles from '../services/titles';
-import detailstyles from './detailstyles.css';
+import detailstyles from '../styles/detailstyles.css';
 
 
 const AdventurerDetails = () => {
