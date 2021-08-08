@@ -1,7 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { useParams } from 'react-router-dom';
 import { getAdventurerDetails } from '../state/adventurers';
+import { formatAdventurer, advImage, jobConverter } from '../services/utils';
+import titles from '../services/titles';
+
 
 const AdventurerDetails = () => {
 
@@ -11,9 +13,28 @@ const AdventurerDetails = () => {
 
   if(loading) return <h1>Loading Details...</h1>;
 
+  const formattedAdventurer = formatAdventurer(details.race, details.face);
+  const imageUrl = advImage(formattedAdventurer);
+
+  const title = titles[details.title];
+
+  const mJob = jobConverter(details.mainJob);
+  const sJob = jobConverter(details.subJob);
+
   return (
     <section>
-      <h2>Name: {details.name}</h2>
+      <section>
+        <img src={imageUrl} alt={details.name}></img>
+        <h2>{details.name}</h2>
+        <h2>{title}</h2>
+        {details.subJob ? <h2>{mJob}{details.mainLevel} / {sJob}{details.subLevel}</h2> : <h2>{mJob}{details.mainLevel}</h2>}
+        <img src="../../public/nationImages/bastok.webp" alt="bastok"></img>
+        <img src="../../public/nationImages/sandoria.webp" alt="sandoria"></img>
+        <img src="../../public/nationImages/windurst.webp" alt="windurst"></img>
+        <p>{details.rankBastok}</p>
+        <p>{details.rankSandoria}</p>
+        <p>{details.rankWindurst}</p>
+      </section>
       <section>
         <h3>Jobs</h3>
         <p>WAR: {details.war}</p>

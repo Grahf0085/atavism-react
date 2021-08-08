@@ -11,48 +11,34 @@ const Adventurer = ({ name, mainJob, mainLevel, subJob, subLevel, face, race }) 
   const formattedAdventurer = formatAdventurer(race, face);
   const imageUrl = advImage(formattedAdventurer);
 
-  if(subJob) {
-    return <section className={adventurersyles.oneItem}>
-      <Link to={`/adventurer/${name}`}>
-        <figure>
-          <figcaption>
-            <h3>{name}</h3>
-          </figcaption>
-          <img src={imageUrl} alt={name} height="75rem" width="75rem" />
-          <figcaption>
-            <h3>{mJob}{mainLevel} / {sJob}{subLevel}</h3>
-          </figcaption>
-        </figure>
-      </Link>
+  return <section className={adventurersyles.oneItem}>
+    <Link to={`/adventurer/${name}`}>
+      <figure>
+        <figcaption>
+          <h3>{name}</h3>
+        </figcaption>
+        <img src={imageUrl} alt={name} height="100rem" width="100rem" />
+        <figcaption>
+          {subJob ? <h3>{mJob}{mainLevel} / {sJob}{subLevel}</h3> : <h3>{mJob}{mainLevel}</h3>}
+        </figcaption>
+      </figure>
+    </Link>
       
-      {/* <img src={imageUrl} alt={name} height="65rem" width="65rem"></img>
+    {/* <img src={imageUrl} alt={name} height="65rem" width="65rem"></img>
       <h3>{name}</h3>
       <h3>{mJob}{mainLevel} / {sJob}{subLevel}</h3> */}
-    </section>;
-  } else {
-    return <section className={adventurersyles.oneItem}>
-      <Link to={`/adventurer/${name}`}>
-        <figure>
-          <figcaption>
-            <h3>{name}</h3>
-          </figcaption>
-          <img src={imageUrl} alt={name} height="75rem" width="75rem" />
-          <figcaption>
-            <h3>{mJob}{mainLevel}</h3>
-          </figcaption>
-        </figure>
-      </Link>
-    </section>;
-  }
+  </section>;
 
 };
 
 Adventurer.propTypes = {
   name: PropTypes.string.isRequired,
   mainJob: PropTypes.number.isRequired,
-  subJob: PropTypes.number.isRequired,
+  subJob: PropTypes.number,
   mainLevel: PropTypes.number.isRequired,
-  subLevel: PropTypes.number.isRequired
+  subLevel: PropTypes.number,
+  face: PropTypes.string.isRequired,
+  race: PropTypes.string.isRequired
 };
 
 export default Adventurer;
