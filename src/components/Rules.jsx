@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from '../components/app/styles.css';
-import rulesStyles from './rulesStyles.css';
+import styles from '../styles/styles.css';
+import rulesStyles from '../styles/rulesStyles.css';
 
 const Rules = () => {
   return (

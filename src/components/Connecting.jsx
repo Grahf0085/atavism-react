@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from '../components/app/styles.css';
-import connectingStyles from './connectingStyles.css';
+import styles from '../styles/styles.css';
+import connectingStyles from '../styles/connectingStyles.css';
 
 
 const Connecting = () => {

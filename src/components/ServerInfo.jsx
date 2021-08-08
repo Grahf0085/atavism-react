@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from '../components/app/styles.css';
-import infoStyles from './serverInfoStyles.css';
+import styles from '../styles/styles.css';
+import infoStyles from '../styles/serverInfoStyles.css';
 
 const Info = () => {
   return ( 

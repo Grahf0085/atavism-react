@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from '../components/app/styles.css';
-import workingStyles from './workingStyles.css';
+import styles from '../styles/styles.css';
+import workingStyles from '../styles/workingStyles.css';
 
 const Working = () => {
   return (
@@ -8,8 +8,8 @@ const Working = () => {
       <h2>Missions</h2>
       <section className={workingStyles.bcnmMeat}>
         <h2>Nation Missions: All Working</h2>
-        <h2>Zilart Mission: ZM1 to ZM13</h2>
-        <h2>COP Mission: PM1 to PM5-2</h2>
+        <h2>Zilart Missions: ZM1 to ZM13</h2>
+        <h2>COP Missions: PM1 to PM5-2</h2>
       </section>
       <h2>BCNMs, KSNMs, and ENMs</h2>
       <section className={workingStyles.bcnmMeat}>
