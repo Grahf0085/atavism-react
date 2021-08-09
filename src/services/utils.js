@@ -1,7 +1,7 @@
 import backgrounds from './backgrounds.js';
-// import nations from './nations.js';
 
 export function backgroundFunction() {
+
   const randIndex = Math.floor(Math.random() * backgrounds.length);
   const bodyThing = document.querySelector('body');
   const bg = backgrounds[randIndex];
@@ -10,6 +10,7 @@ export function backgroundFunction() {
   bodyThing.style.backgroundRepeat = 'no-repeat';
   bodyThing.style.backgroundSize = 'cover';
   bodyThing.style.backgroundPosition = 'center center';
+
 }
 
 export function jobConverter(jobNumber) {
