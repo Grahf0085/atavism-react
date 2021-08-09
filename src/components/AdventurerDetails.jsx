@@ -64,13 +64,13 @@ const AdventurerDetails = () => {
           </section>
           <section className={detailstyles.crafts}>
             <p>Fishing: {details.fishing}</p>
-            <p>Fishing: {details.woodworking}</p>
-            <p>Fishing: {details.smithing}</p>
-            <p>Fishing: {details.goldsmithing}</p>
-            <p>Fishing: {details.leathercraft}</p>
-            <p>Fishing: {details.bonecraft}</p>
-            <p>Fishing: {details.alchemy}</p>
-            <p>Fishing: {details.cooking}</p>
+            <p>Woodworking: {details.woodworking}</p>
+            <p>Smithing: {details.smithing}</p>
+            <p>Goldsmithing: {details.goldsmithing}</p>
+            <p>Leathercraft: {details.leathercraft}</p>
+            <p>Bonecraft: {details.bonecraft}</p>
+            <p>Alchemy: {details.alchemy}</p>
+            <p>Cooking: {details.cooking}</p>
           </section>
         </section>
       </section>
