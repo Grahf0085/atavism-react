@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { getAdventurerDetails } from '../state/adventurers';
 import { formatAdventurer, advImage, jobConverter } from '../services/utils';
 import titles from '../services/titles';
+import zones from '../services/zones';
 import detailstyles from '../styles/detailstyles.css';
 import styles from '../styles/styles.css';
 
@@ -18,6 +19,7 @@ const AdventurerDetails = () => {
   const imageUrl = advImage(formattedAdventurer);
 
   const title = titles[details.title];
+  const zone = zones[details.zone];
 
   const mJob = jobConverter(details.mainJob);
   const sJob = jobConverter(details.subJob);
@@ -31,6 +33,7 @@ const AdventurerDetails = () => {
               <h2>{details.name}</h2>
               <h2 className={detailstyles.detailsTitle}>{title}</h2>
               {details.subJob ? <h2>{mJob}{details.mainLevel} / {sJob}{details.subLevel}</h2> : <h2>{mJob}{details.mainLevel}</h2>}
+              <h2>{zone}</h2>
             </section>
             <img src={imageUrl} alt={details.name} width="200rem" height="200rem"></img>       
             <section className={detailstyles.nationsBanner}>
