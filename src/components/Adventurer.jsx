@@ -17,16 +17,12 @@ const Adventurer = ({ name, mainJob, mainLevel, subJob, subLevel, face, race }) 
         <figcaption>
           <h3>{name}</h3>
         </figcaption>
-        <img src={imageUrl} alt={name} height="100rem" width="100rem" />
+        <img src={imageUrl} alt={name} height="200rem" width="200rem" />
         <figcaption>
           {subJob ? <h3>{mJob}{mainLevel} / {sJob}{subLevel}</h3> : <h3>{mJob}{mainLevel}</h3>}
         </figcaption>
       </figure>
     </Link>
-      
-    {/* <img src={imageUrl} alt={name} height="65rem" width="65rem"></img>
-      <h3>{name}</h3>
-      <h3>{mJob}{mainLevel} / {sJob}{subLevel}</h3> */}
   </section>;
 
 };
