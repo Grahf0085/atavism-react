@@ -6,7 +6,6 @@ import titles from '../services/titles';
 import detailstyles from '../styles/detailstyles.css';
 import styles from '../styles/styles.css';
 
-
 const AdventurerDetails = () => {
 
   const { name } = useParams();
@@ -26,7 +25,7 @@ const AdventurerDetails = () => {
   return (
     <section className={styles.adventurerDetails}>
       <section className={styles.meat}>
-        <section>
+        <section className={detailstyles.container}>
           <section className={detailstyles.overview}>
             <section className={detailstyles.nameTitleJob}>
               <h2>{details.name}</h2>
@@ -34,16 +33,15 @@ const AdventurerDetails = () => {
               {details.subJob ? <h2>{mJob}{details.mainLevel} / {sJob}{details.subLevel}</h2> : <h2>{mJob}{details.mainLevel}</h2>}
             </section>
             <img src={imageUrl} alt={details.name} width="200rem" height="200rem"></img>       
-            <section>
-              <section className={detailstyles.bastok}><span>{details.rankBastok}</span>
+            <section className={detailstyles.nationsBanner}>
+              <section className={detailstyles.bastok}><span className={detailstyles.missionRank}>{details.rankBastok}</span>
               </section>
-              <section className={detailstyles.sandoria}><span>{details.rankSandoria}</span>
+              <section className={detailstyles.sandoria}><span className={detailstyles.missionRank}>{details.rankSandoria}</span>
               </section>
-              <section className={detailstyles.windurst}><span>{details.rankWindurst}</span>
+              <section className={detailstyles.windurst}><span className={detailstyles.missionRank}>{details.rankWindurst}</span>
               </section>
             </section>
           </section>
-          <h3>Jobs</h3>
           <section className={detailstyles.jobs}>
             <p>WAR {details.war}</p>
             <p>MNK {details.mnk}</p>
@@ -61,7 +59,6 @@ const AdventurerDetails = () => {
             <p>DRG {details.drg}</p>
             <p>SMN {details.smn}</p>
           </section>
-          <h3>Crafts</h3>
           <section className={detailstyles.crafts}>
             <p>Fishing: {details.fishing}</p>
             <p>Fishing: {details.woodworking}</p>
