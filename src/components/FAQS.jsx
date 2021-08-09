@@ -41,6 +41,13 @@ const FAQs = () => {
         <section className={faqsStyles.faqsMeat}>
           <p>Besides the occassional power outage the server will be restarted at least weekly. An one hour warning will be posted before restarts.</p>
         </section>
+        <h2>What about customization?</h2>
+        <section className={faqsStyles.faqsMeat}>
+          <p>I&apos;m not against customization or re-using pieces of other expansions. The server isn&apos;t necessarily about strict adherence to
+            how the game was in 2005. For example, leaving Tococo in the game is not a game breaker. Tococo alone is just another NM with a good drop.
+            Likewise, Raising several jobs H2H skill makes choosing a subjob for those jobs a little more difficult and adds a little more complexity.
+          </p>
+        </section>
       </section>
     </section>
   );
