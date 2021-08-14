@@ -34,7 +34,7 @@ export const getAdventurerDetails = (name) => {
 export const getNumberOnline = () => {
 
   const [loading, setLoading] = useState(true);
-  const [numberOnline, setNumberOnline] = useState([]);
+  const [numberOnline, setNumberOnline] = useState(0);
 
   useEffect(() => {
     fetchNumberOnline()
