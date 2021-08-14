@@ -33,7 +33,7 @@ const PlayerSearch = () => {
         <section>
           <button className={playersearchstyles.pagingButton} disabled={page <= 1} onClick={() => setPage((prevPage) => 
             prevPage - 1)}>&lt;</button>
-          <button className={playersearchstyles.pagingButton} disabled={nameList.length < 50} onClick={() => 
+          <button className={playersearchstyles.pagingButton} disabled={nameList.length < 10} onClick={() => 
             setPage((prevPage) => prevPage + 1)}>&gt;</button>
         </section>
       </section>

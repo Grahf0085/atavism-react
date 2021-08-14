@@ -25,7 +25,7 @@ const AdventurerList = () => {
         <section>
           <button className={adventureListStyles.pagingButton} disabled={page <= 1} onClick={() => setPage((prevPage) => 
             prevPage - 1)}>&lt;</button>
-          <button className={adventureListStyles.pagingButton} disabled={adventurers.length < 50} onClick={() => 
+          <button className={adventureListStyles.pagingButton} disabled={adventurers.length < 10} onClick={() => 
             setPage((prevPage) => prevPage + 1)}>&gt;</button>
         </section>
       </section>

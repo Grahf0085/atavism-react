@@ -1,7 +1,7 @@
 export const fetchAllAdventurers = async (page) => {
   const res = await fetch('https://atavism.lhr.rocks/api/toons'); 
   const json = await res.json();
-  return json.slice((page - 1) * 50, page * 50);
+  return json.slice((page - 1) * 10, page * 10);
 };
 
 export const fetchDetails = async (name) => {
@@ -19,5 +19,5 @@ export const fetchNumberOnline = async () => {
 export const fetchNameList = async (name, page) => {
   const res = await fetch(`https://atavism.lhr.rocks/api/toonlist/${name}`);
   const json = await res.json();
-  return json.slice((page - 1) * 50, page * 50);
+  return json.slice((page - 1) * 10, page * 10);
 };

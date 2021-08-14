@@ -46,6 +46,14 @@ const FAQs = () => {
           <p>I&apos;m not against customization or re-using pieces of other expansions. The server isn&apos;t necessarily about strict adherence to
             how the game was in 2005. For example, leaving Tococo in the game is not a game breaker. Tococo alone is just another NM with a good drop.
             Likewise, Raising several jobs H2H skill makes choosing a subjob for those jobs a little more difficult and adds a little more complexity.
+            Roughly, customization should add complexity, or height, and not flatten the game.
+          </p>
+        </section>
+        <h2>What can I expect concewrning updates?</h2>
+        <section className={faqsStyles.faqsMeat}>
+          <p>I will not be making an anncouncement everytime there is an update. Only major changes will be announced in discord. For example,
+            an item drop rate changing by a few percent or a monster&apos;s level being changing by a few levels will never be announced. 
+            Expect the game to become more 2005ish like over time.  Expect all relevant updates from Wings/Limit Break to be implemented on a regular basis.
           </p>
         </section>
       </section>
