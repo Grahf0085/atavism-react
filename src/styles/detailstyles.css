@@ -1,8 +1,4 @@
 .container {
-  /* display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr; */
-  /* /* grid-template-areas: '' */
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -15,11 +11,20 @@
   margin-bottom: 2rem;
 }
 
+.overview img {
+  border-radius: 1rem;
+}
+
 .nameTitleJob {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.nameTitleJob h2 {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .detailsTitle {

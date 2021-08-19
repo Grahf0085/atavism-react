@@ -31,6 +31,7 @@ const AdventurerDetails = () => {
           <section className={detailstyles.overview}>
             <section className={detailstyles.nameTitleJob}>
               <h2>{details.name}</h2>
+              {details.online ? <h2>Online: Yes</h2> : <h2>Online: No</h2>}
               <h2 className={detailstyles.detailsTitle}>{title}</h2>
               {details.subJob ? <h2>{mJob}{details.mainLevel} / {sJob}{details.subLevel}</h2> : <h2>{mJob}{details.mainLevel}</h2>}
               <h2>{zone}</h2>

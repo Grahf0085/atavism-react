@@ -12,14 +12,17 @@ const Connecting = () => {
         <ol className={connectingStyles.connectingSection}>
           <li className={connectingStyles.connectingLi}>Install wine and lutris</li>
           <li className={connectingStyles.connectingLi}>Download Installer Here: LINK TO COME</li>
-          <li className={connectingStyles.connectingLi}>Install.......what file to RUN?!?!!?</li>
-          <li className={connectingStyles.connectingLi}>Download atavism loader: <a href ="https://drive.google.com/file/d/1ZSG2-0D_3k3GEa53IHUwqIHhCzGldG1T/view?usp=sharing" download>-----&gt; Download Here</a></li>
-          <li className={connectingStyles.connectingLi}>Put bootloader SOMEWHERE FILL THIS IN OMG</li>
-          <li className={connectingStyles.connectingLi}>Start bootloader and point it to atavism.duckdns.org. Ie open a terminal in the atavism loader directory and run &apos;wine atavismloader.exe --server atavism.duckdns.org&apos;</li>
-          <li className={connectingStyles.connectingLi}>Make an account through the bootloader</li>
+          <li className={connectingStyles.connectingLi}>Extract contents of archive</li>
+          <li className={connectingStyles.connectingLi}>Run &apos;AtavismXI Installer.exe&apos; with wine</li>
+          <li className={connectingStyles.connectingLi}>Follow the Prompts</li>
+          <li className={connectingStyles.connectingLi}>After install finishes might have to run FINAL FANTASY XI Config.exe and change display settings for game to start.</li>
+          <li className={connectingStyles.connectingLi}>Likewise, emulating a virtual desktop in wine configuration might help avoid bugs.</li>
+          <li className={connectingStyles.connectingLi}>Start bootloader and point it to atavism.duckdns.org. Ie open a terminal at 
+            /.wine/drive_c/Program Files (x86)/PlayOnline/SquareEnix/PlayOnlineViewer and run &apos;wine atavismloader.exe --server atavism.duckdns.org&apos;</li>
+          <li className={connectingStyles.connectingLi}>Make an account through the bootloader.  Exit bootloader.</li>
           <li className={connectingStyles.connectingLi}>In lutris make a new game.</li>
           <ol className={connectingStyles.connectingSection}>
-            <li className={connectingStyles.connectingLi}>In the &apos;Game Info&apos; tab enter a name and select wine for the runner. Ensure wine 5.0 is installed.</li>
+            <li className={connectingStyles.connectingLi}>In the &apos;Game Info&apos; tab enter a name and select wine for the runner. Ensure wine 5.0 is installed and selected as the wine version being used.</li>
             <li className={connectingStyles.connectingLi}>In the &apos;Game Options&apos; &apos;executable&apos; line enter the path to atavism loader. In the &apos;arguments&apos; line enter &apos;--server atavism.duckdns.org --user USERNAME --pass PASSWORD&apos;</li>
             <li className={connectingStyles.connectingLi}>Click save</li>
             <li className={connectingStyles.connectingLi}>Launch Game</li>
@@ -27,8 +30,12 @@ const Connecting = () => {
         </ol>
         <h2>Windows</h2>
         <ul className={connectingStyles.connectingSection}>
-          <li className={connectingStyles.connectingLi}>Windows should not pose any additonal problems</li>
-          <li className={connectingStyles.connectingLi}>You&apos;re welcome to use Ashita or Windower.  Just be sure you&apos;re only using approved addons from the rules section</li>
+          <li className={connectingStyles.connectingLi}>Download Installer Here: LINK TO COME</li>
+          <li className={connectingStyles.connectingLi}>Extract contents of archive</li>
+          <li className={connectingStyles.connectingLi}>Run &apos;AtavismXI Installer.exe&apos;</li>
+          <li className={connectingStyles.connectingLi}>Follow the Prompts</li>
+          <li className={connectingStyles.connectingLi}>After install finishes might have to run FINAL FANTASY XI Config.exe and change display settings for game to start.</li>
+          <li className={connectingStyles.connectingLi}>You&apos;re welcome to use Ashita or Windower, which should already be setup. Just be sure you&apos;re only using approved addons from the rules section</li>
         </ul>
       </section>
     </section>
