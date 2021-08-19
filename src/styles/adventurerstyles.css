@@ -5,6 +5,10 @@
   /* align-items: center; */
 }
 
+.oneItem img {
+  border-radius: 1rem;
+}
+
 /* @media only screen and (max-width: 550px) {
   .oneItem {
     grid-template-columns: 1fr;

@@ -23,10 +23,14 @@ const PlayerSearch = () => {
     e.preventDefault();
   };
 
+  const clear = (e) => {
+    e.target.value = '';
+  };
+
   return (
     <section className={styles.adventurerList}>
       <form onSubmit={handleSubmit} className={playersearchstyles.searchForm}>
-        <input className={playersearchstyles.searchInput} placeholder="adventurer's name" onChange={((e) => setName(e.target.value))} value={searchedName}></input>
+        <input className={playersearchstyles.searchInput} type="text" placeholder="adventurer's name" onFocus={((e) => clear(e))} onChange={((e) => setName(e.target.value))} value={searchedName}></input>
       </form>
       <section className={playersearchstyles.listMeat}>
         <ul className={playersearchstyles.adventurerColumns}>{nameElements}</ul>
