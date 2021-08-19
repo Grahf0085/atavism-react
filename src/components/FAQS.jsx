@@ -49,7 +49,7 @@ const FAQs = () => {
             Roughly, customization should add complexity, or height, and not flatten the game.
           </p>
         </section>
-        <h2>What can I expect concewrning updates?</h2>
+        <h2>What can I expect concerning updates?</h2>
         <section className={faqsStyles.faqsMeat}>
           <p>I will not be making an anncouncement everytime there is an update. Only major changes will be announced in discord. For example,
             an item drop rate changing by a few percent or a monster&apos;s level being changing by a few levels will never be announced. 
