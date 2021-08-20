@@ -8,6 +8,11 @@ const Connecting = () => {
     <section className={styles.connecting}>
       <h2>Connecting</h2>
       <section className={styles.meat}>
+        <h2>Existing Installs</h2>
+        <ul className={connectingStyles.connectingSection}>
+          <li className={connectingStyles.connectingLi}>Existing installations of Wings or Limit Break should be able to connect and play on Atavism. Although their might be bugs specific to those installers we cannot support</li>
+          <li className={connectingStyles.connectingLi}>Point your bootloader to play.atavismxi.com to make a new account and login using it</li>
+        </ul>
         <h2>Linux (tested on Arch with wine 5.0)</h2>
         <ol className={connectingStyles.connectingSection}>
           <li className={connectingStyles.connectingLi}>Install wine and lutris</li>
