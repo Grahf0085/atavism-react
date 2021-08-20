@@ -21,7 +21,7 @@ const Rules = () => {
           <li className={rulesStyles.rulesLi}>If you find an out of era item report it in the discord</li>
           <li className={rulesStyles.rulesLi}>Requests for additional addons should be made in discord addon channel</li>
         </section>
-        <h2>Approved <a href = "https://docs.ashitaxi.com/">Ashita Addons/Plugins</a></h2>
+        <h2>Approved <a href = "https://docs.ashitaxi.com/" className={rulesStyles.toolLinks}>Ashita Addons/Plugins</a></h2>
         <section className={rulesStyles.rulesMeat}>
           <li className={rulesStyles.rulesLi}>Battlemod</li>
           <li className={rulesStyles.rulesLi}>Cfhblock</li>
@@ -49,7 +49,7 @@ const Rules = () => {
           <li className={rulesStyles.rulesLi}>TParty</li>
           <li className={rulesStyles.rulesLi}>Watchexp</li>
         </section>
-        <h2>Approved <a href = "https://docs.windower.net">Windower Addons/Plugins</a></h2>
+        <h2>Approved <a href = "https://docs.windower.net" className={rulesStyles.toolLinks}>Windower Addons/Plugins</a></h2>
         <section className={rulesStyles.rulesMeat}>
           <li className={rulesStyles.rulesLi}>Bar Filler</li>
           <li className={rulesStyles.rulesLi}>Battle Mod</li>

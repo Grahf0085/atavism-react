@@ -34,6 +34,10 @@
   flex-wrap: wrap;
 }
 
+.toolLinks {
+  font-family: Ubuntu-Italic;
+}
+
 @media only screen and (max-width: 850px) {
   .rulesMeat {
     max-height: 27rem;
