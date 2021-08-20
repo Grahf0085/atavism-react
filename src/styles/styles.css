@@ -29,9 +29,9 @@ body {
   display: grid;
   grid-template-columns: 0.2fr 1fr 13rem;
   grid-template-rows: 1fr 0.5fr;
-  grid-template-areas: 
-  'main main online'
-  'sub sub sub';
+  grid-template-areas:
+    'main main online'
+    'sub sub sub';
 }
 
 .footerArea {
@@ -150,8 +150,7 @@ li {
   .rules,
   .working,
   .support,
-  .adventurerList
-  .adventurerDetails {
+  .adventurerList .adventurerDetails {
     grid-area: middle;
     display: flex;
     align-items: center;
@@ -194,8 +193,7 @@ li {
 @font-face {
   font-family: 'Ubuntu';
   src: url('../fonts/Ubuntu-Regular.eot');
-  src: url('../fonts/Ubuntu-Regular.eot?#iefix')
-      format('embedded-opentype'),
+  src: url('../fonts/Ubuntu-Regular.eot?#iefix') format('embedded-opentype'),
     url('../fonts/Ubuntu-Regular.woff2') format('woff2'),
     url('../fonts/Ubuntu-Regular.woff') format('woff'),
     url('../fonts/Ubuntu-Regular.ttf') format('truetype'),
@@ -208,8 +206,7 @@ li {
 @font-face {
   font-family: 'Ubuntu-Bold';
   src: url('../fonts/Ubuntu-Bold.eot');
-  src: url('../fonts/Ubuntu-Bold.eot?#iefix')
-      format('embedded-opentype'),
+  src: url('../fonts/Ubuntu-Bold.eot?#iefix') format('embedded-opentype'),
     url('../fonts/Ubuntu-Bold.woff2') format('woff2'),
     url('../fonts/Ubuntu-Bold.woff') format('woff'),
     url('../fonts/Ubuntu-Bold.ttf') format('truetype'),
@@ -222,8 +219,7 @@ li {
 @font-face {
   font-family: 'Ubuntu-Italic';
   src: url('../fonts/Ubuntu-Italic.eot');
-  src: url('../fonts/Ubuntu-Italic.eot?#iefix')
-      format('embedded-opentype'),
+  src: url('../fonts/Ubuntu-Italic.eot?#iefix') format('embedded-opentype'),
     url('../fonts/Ubuntu-Italic.woff2') format('woff2'),
     url('../fonts/Ubuntu-Italic.woff') format('woff'),
     url('../fonts/Ubuntu-Italic.ttf') format('truetype'),

@@ -17,3 +17,7 @@
   background-color: transparent;
   list-style: none;
 }
+
+.items a {
+  font-family: Ubuntu-Italic;
+}
