@@ -16,6 +16,7 @@ const Connecting = () => {
         <h2>Linux (tested on Arch with wine 5.0)</h2>
         <ol className={connectingStyles.connectingSection}>
           <li className={connectingStyles.connectingLi}>Install wine and lutris</li>
+          <li className={connectingStyles.connectingLi}>For SSL connections will need to install lib32-gnutls and winbind (sometimes included in Samba package)</li>
           <li className={connectingStyles.connectingLi}>Download Installer <a href="https://drive.google.com/file/d/15rCPJBvpEzmP8mLbQMV7ptXmghxfJF0B/view?usp=sharing">-&gt;Here&lt;-</a></li>
           <li className={connectingStyles.connectingLi}>Extract contents of archive</li>
           <li className={connectingStyles.connectingLi}>Run &apos;AtavismXI Installer.exe&apos; with wine</li>

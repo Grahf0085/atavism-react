@@ -11,7 +11,7 @@ const Info = () => {
           <h2>Game Play</h2>
           <li className={infoStyles.items}>
             <ol className={infoStyles.changedPart}>
-              <li className={infoStyles.items}>Max Level: 50. No ROZ until Shadow Lord falls. No COP until someone has sky access</li>
+              <li className={infoStyles.items}>Initial Level Cap: 50. No ROZ until Shadow Lord falls. No COP until someone has sky access</li>
               <li className={infoStyles.items}>Some &ldquo;content&ldquo; was more seperable than other &ldquo;content&ldquo;. As a result there is a lot of bleedthrough between vanilla and ROZ. Less bleed through for COP. And even less bleed through for TOAU - which was mostly eliminated</li>
               <li className={infoStyles.items}>Land Kings are Force Pop</li>
               <li className={infoStyles.items}>Argus and Leech King levels increased</li>
