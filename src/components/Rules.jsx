@@ -83,7 +83,7 @@ const Rules = () => {
           <li className={rulesStyles.rulesLi}>Any modified bootloader</li>
           <li className={rulesStyles.rulesLi}>Auction House Addons</li>
           <li className={rulesStyles.rulesLi}>Targeting Addons</li>
-          <li className={rulesStyles.rulesLi}>Position of Speed Addons</li>
+          <li className={rulesStyles.rulesLi}>Position or Speed Addons</li>
           <li className={rulesStyles.rulesLi}>Multisend / Servo</li>
           <li className={rulesStyles.rulesLi}>Minimap and other map overlays that interact with the world (Show NPCs, players, etc)</li>
           <li className={rulesStyles.rulesLi}>Allmaps</li>
