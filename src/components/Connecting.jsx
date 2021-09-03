@@ -37,7 +37,7 @@ const Connecting = () => {
         </ol>
         <h2>Windows</h2>
         <ul className={connectingStyles.connectingSection}>
-          <li className={connectingStyles.connectingLi}>Download Installer <a href="https://drive.google.com/file/d/17M3B0CDdAZ0GTmOAiHP17jS8uWVBYoIC/view?usp=sharing">-&gt;Here&lt;-</a></li>
+          <li className={connectingStyles.connectingLi}>Download Installer <a href="https://drive.google.com/file/d/17M3B0CDdAZ0GTmOAiHP17jS8uWVBYoIC/view?usp=sharing">-&gt;Here&lt;- and unzip</a></li>
           <li className={connectingStyles.connectingLi}>Extract contents of archive</li>
           <li className={connectingStyles.connectingLi}>Run &apos;AtavismXI Installer.exe&apos;</li>
           <li className={connectingStyles.connectingLi}>Follow the Prompts</li>
