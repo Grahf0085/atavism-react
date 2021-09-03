@@ -12,7 +12,7 @@ const Info = () => {
           <li className={infoStyles.items}>
             <ol className={infoStyles.changedPart}>
               <li className={infoStyles.items}>Initial Level Cap: 50. No ROZ until Shadow Lord falls. No COP until someone has sky access</li>
-              <li className={infoStyles.items}>Some &ldquo;content&ldquo; was more seperable than other &ldquo;content&ldquo;. As a result there is a lot of bleedthrough between vanilla and ROZ. Less bleed through for COP. And even less bleed through for TOAU - which was mostly eliminated</li>
+              <li className={infoStyles.items}>Some &ldquo;content&ldquo; was more seperable than other &ldquo;content&ldquo;. As a result there is a lot of bleedthrough between vanilla and ROZ. Less bleedthrough for COP. And even less bleedthrough for TOAU - which was mostly eliminated</li>
               <li className={infoStyles.items}>Land Kings are Force Pop</li>
               <li className={infoStyles.items}>Argus and Leech King levels increased</li>
               <li className={infoStyles.items}>Dia/Bio Overwrite Works Both Ways</li>
@@ -30,8 +30,8 @@ const Info = () => {
             <ol className={infoStyles.changedPart}>
               <li className={infoStyles.items}>Several Jobs H2H skill drastically increased</li>
               <li className={infoStyles.items}>PLD and DRK MP increased to equal RDMs</li>
-              <li className={infoStyles.items}>Several abilities/traits implemented from the start. Ie MNK and NIN have subtle blow and DRG has spirit surge even though those were not vanilla traits/abilities</li>
-              <li className={infoStyles.items}>Other abiltiies/traits will be unlocked as expansions are unlocked. Ie PLD will get shield mastery and WHM will get divine veil when COP is released</li>
+              <li className={infoStyles.items}>Several abilities/traits implemented from the start. Ie MNK and NIN have subtle blow and DRG has spirit surge even though those were not vanilla/ROZ traits/abilities</li>
+              <li className={infoStyles.items}>Other abilities/traits will be unlocked as expansions are unlocked. Ie PLD will get shield mastery and WHM will get divine veil when COP is released</li>
               <li className={infoStyles.items}>TOAU merits left in to give end game a little more depth and avoid updating DATs. Spending merits ON ANY MERITS BESIDES TOAU MERITS AND THOSE BEFORE TOAU WILL RESULT IN LOOSING MERIT POINTS</li>
             </ol>
           </li>
