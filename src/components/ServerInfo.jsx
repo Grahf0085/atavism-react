@@ -13,7 +13,6 @@ const Info = () => {
             <ol className={infoStyles.changedPart}>
               <li className={infoStyles.items}>Initial Level Cap: 50. No ROZ until Shadow Lord falls. No COP until someone has sky access</li>
               <li className={infoStyles.items}>Some &ldquo;content&ldquo; was more seperable than other &ldquo;content&ldquo;. As a result there is a lot of bleedthrough between vanilla and ROZ. Less bleedthrough for COP. And even less bleedthrough for TOAU - which was mostly eliminated</li>
-              <li className={infoStyles.items}>Land Kings are Force Pop</li>
               <li className={infoStyles.items}>Argus and Leech King levels increased</li>
               <li className={infoStyles.items}>Dia/Bio Overwrite Works Both Ways</li>
               <li className={infoStyles.items}>Mob Trains Walk back to Spawn Point</li>
