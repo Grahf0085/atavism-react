@@ -91,7 +91,7 @@ li {
 
 h2 {
   font-size: 1.2rem;
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
 }
 
 h3 {
@@ -136,21 +136,28 @@ li {
     height: auto;
     position: relative;
   }
-  .home,
+
   .info,
   .connecting,
   .FAQs,
   .rules,
   .working,
   .support,
-  .adventurerList, 
-  .adventurerDetails,
-  .recipesList {
+  .adventurerDetails
+  {
     grid-area: middle;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
+  }
+
+  .adventurerList, .home {
+    grid-area: middle;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
   }
   ul,
