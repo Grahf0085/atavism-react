@@ -19,7 +19,7 @@ import styles from '../../styles/styles.css';
 import AdventurerList from '../AdventurerList';
 import AdventurerDetails from '../AdventurerDetails';
 import PlayerSearch from '../PlayerSearch';
-
+import RecipeSearch from '../RecipeSearch';
 
 export default function App() {
 
@@ -82,6 +82,11 @@ export default function App() {
               path="/playersearch"
               exact
               render={(routerProps) => <PlayerSearch {...routerProps} />}
+            />
+            <Route
+              path="/recipes"
+              exact
+              render={(routerProps) => <RecipeSearch {...routerProps} />}
             />
           </Switch>
           <Sidebar />

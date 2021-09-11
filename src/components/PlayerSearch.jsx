@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import styles from '../styles/styles.css';
 import { getNameList } from '../state/adventurers';
 import Adventurer from './Adventurer';
 import playersearchstyles from '../styles/playersearch.css';
+import styles from '../styles/styles.css';
 
 const PlayerSearch = () => {
 

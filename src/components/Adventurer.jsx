@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import adventurersyles from '../styles/adventurerstyles.css';
-import { jobConverter, formatAdventurer, advImage } from '../services/utils';
+import { jobConverter, formatAdventurer } from '../services/utils';
+import { advImage } from '../services/advImage';
 import { Link } from 'react-router-dom';
 
 const Adventurer = ({ name, mainJob, mainLevel, subJob, subLevel, face, race }) => {
