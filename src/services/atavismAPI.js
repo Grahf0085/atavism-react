@@ -21,3 +21,9 @@ export const fetchNameList = async (name, page) => {
   const json = await res.json();
   return json.slice((page - 1) * 10, page * 10);
 };
+
+export const fetchRecipeList = async (craft, page) => {
+  const res = await fetch(`https://atavism.lhr.rocks/api/recipes/${craft}`);
+  const json = await res.json();
+  return json.slice((page - 1) * 10, page * 10);
+};
