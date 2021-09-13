@@ -19,6 +19,7 @@ import styles from '../../styles/styles.css';
 import AdventurerList from '../AdventurerList';
 import AdventurerDetails from '../AdventurerDetails';
 import PlayerSearch from '../PlayerSearch';
+import RecipeByCraft from '../RecipeByCraft';
 import RecipeSearch from '../RecipeSearch';
 
 export default function App() {
@@ -85,6 +86,11 @@ export default function App() {
             />
             <Route
               path="/recipes"
+              exact
+              render={(routerProps) => <RecipeByCraft {...routerProps} />}
+            />
+            <Route
+              path="/recipesearch"
               exact
               render={(routerProps) => <RecipeSearch {...routerProps} />}
             />
