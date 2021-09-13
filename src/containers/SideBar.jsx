@@ -18,7 +18,8 @@ export default function Content() {
       <section className={sidebarStyles.subList}>
         <Link to="/adventurers" className={sidebarStyles.mobileA}>Who&apos;s Online</Link>
         <Link to="/playersearch" className={sidebarStyles.mobileA}>Player Search</Link>
-        <Link to="/recipes" className={sidebarStyles.mobileA}>Synthesis Recipes</Link>
+        <Link to="/recipes" className={sidebarStyles.mobileA}>Recipes By Craft</Link>
+        <Link to="/recipesearch" className={sidebarStyles.mobileA}>Search Recipes</Link>
       </section>
       <section className={sidebarStyles.subList}>
         <h3>Tools</h3>

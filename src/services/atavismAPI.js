@@ -27,3 +27,10 @@ export const fetchRecipeList = async (craft, page) => {
   const json = await res.json();
   return json.slice((page - 1) * 10, page * 10);
 };
+
+export const fetchRecipeSearch = async (term, page) => {
+  if(term === '') return [];
+  const res = await fetch(`https://atavism.lhr.rocks/api/recipes/${term}`);
+  const json = await res.json();
+  return json.slice((page - 1) * 10, page * 10);
+};

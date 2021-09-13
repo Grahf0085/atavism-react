@@ -1,20 +1,19 @@
 import React, { useState } from 'react';
-import { getRecipeList } from '../state/recipes';
-import Recipe from './Recipe'; 
+import { getRecipeSearch } from '../state/recipes';
+import Recipe from './Recipe';
 import recipeStyles from '../styles/recipes.css';
 import styles from '../styles/styles.css';
 
 const RecipeSearch = () => {
 
-  const [craft, setCraft] = useState('wood');
+  const [searchTerm, setSearchTerm] = useState('');
   const [page, setPage] = useState(1);
-  const [searchedCraft, setSearchedCraft] = useState('search for a recipe');
 
-  const { recipes, loading } = getRecipeList(craft, page);
+  const { searchedRecipes, loading } = getRecipeSearch(searchTerm, page);
 
   if(loading) return <h1>Loading Recipes...</h1>;
 
-  const recipeElements = recipes.map((recipe) => (
+  const recipeElements = searchedRecipes.map((recipe) => (
     <li key={recipe.id}> 
       <Recipe {...recipe} />
     </li>
@@ -30,25 +29,15 @@ const RecipeSearch = () => {
 
   return (
     <section className={styles.recipesList}>
-      <section className={recipeStyles.selectorContainer}>
-        <button className={recipeStyles.craftButton} onClick={() => setCraft('wood')}>Woodworking</button>
-        <button className={recipeStyles.craftButton} onClick={() => setCraft('smith')}>Smithing</button>
-        <button className={recipeStyles.craftButton} onClick={() => setCraft('gold')}>Goldsmithing</button>
-        <button className={recipeStyles.craftButton} onClick={() => setCraft('cloth')}>Clothcraft</button>
-        <button className={recipeStyles.craftButton} onClick={() => setCraft('leather')}>Leathercraft</button>
-        <button className={recipeStyles.craftButton} onClick={() => setCraft('bone')}>Bonecraft</button>
-        <button className={recipeStyles.craftButton} onClick={() => setCraft('alchemy')}>Alchemy</button>
-        <button className={recipeStyles.craftButton} onClick={() => setCraft('cook')}>Cooking</button>
-      </section>
       <form onSubmit={handleSubmit} className={recipeStyles.searchForm}>
-        <input className={recipeStyles.searchInput} type="text" placeholder="search for a recipe" onFocus={((e) => clear(e))} onChange={((e) => setSearchedCraft(e.target.value))} value={searchedCraft}></input>
+        <input className={recipeStyles.searchInput} type="text" placeholder="search for a recipe" onFocus={((e) => clear(e))} onChange={((e) => setSearchTerm(e.target.value))} value={searchTerm}></input>
       </form>
       <section className={recipeStyles.listMeat}>
         <ul className={recipeStyles.hlist}>{recipeElements}</ul>
         <section>
           <button className={recipeStyles.pagingButton} disabled={page <= 1} onClick={() => setPage((prevPage) => 
             prevPage - 1)}>&lt;</button>
-          <button className={recipeStyles.pagingButton} disabled={recipes.length < 10} onClick={() => 
+          <button className={recipeStyles.pagingButton} disabled={searchedRecipes.length < 10} onClick={() => 
             setPage((prevPage) => prevPage + 1)}>&gt;</button>
         </section>
       </section>
