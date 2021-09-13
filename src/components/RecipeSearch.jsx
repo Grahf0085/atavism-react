@@ -8,6 +8,7 @@ const RecipeSearch = () => {
 
   const [craft, setCraft] = useState('wood');
   const [page, setPage] = useState(1);
+  const [searchedCraft, setSearchedCraft] = useState('search for a recipe');
 
   const { recipes, loading } = getRecipeList(craft, page);
 
@@ -18,6 +19,14 @@ const RecipeSearch = () => {
       <Recipe {...recipe} />
     </li>
   ));
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+  };
+
+  const clear = (e) => {
+    e.target.value = '';
+  };
 
   return (
     <section className={styles.recipesList}>
@@ -31,6 +40,9 @@ const RecipeSearch = () => {
         <button className={recipeStyles.craftButton} onClick={() => setCraft('alchemy')}>Alchemy</button>
         <button className={recipeStyles.craftButton} onClick={() => setCraft('cook')}>Cooking</button>
       </section>
+      <form onSubmit={handleSubmit} className={recipeStyles.searchForm}>
+        <input className={recipeStyles.searchInput} type="text" placeholder="search for a recipe" onFocus={((e) => clear(e))} onChange={((e) => setSearchedCraft(e.target.value))} value={searchedCraft}></input>
+      </form>
       <section className={recipeStyles.listMeat}>
         <ul className={recipeStyles.hlist}>{recipeElements}</ul>
         <section>
