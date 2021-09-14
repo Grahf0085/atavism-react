@@ -31,6 +31,7 @@ export default function Content() {
       </section>
       <section className={sidebarStyles.subList}>
         <h3>Links</h3>
+        <a href = "https://atavismxi.fandom.com/wiki/AtavismXI_Wiki" className={sidebarStyles.mobileA}>Atavism Wiki</a>
         <a href = "https://www.wingsxi.com/wings/" className={sidebarStyles.mobileA}>Wings</a>
         <a href = "https://www.limitbreakffxi.com/" className={sidebarStyles.mobileA}>Limit Break</a>
         <a href = "https://gitlab.com/Grahf0085/atavism" className={sidebarStyles.mobileA}>Gitlab</a>
