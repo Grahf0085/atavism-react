@@ -63,6 +63,11 @@
   margin: 1rem;
 }
 
+.recipeLevelForm {
+  display: flex;
+  justify-content: center;
+}
+
 .searchInput {
   width: 90%;
   border: 1px solid white;
