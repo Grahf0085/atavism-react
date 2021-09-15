@@ -6,7 +6,7 @@ const Recipe = ({ wood, smith, gold, cloth, leather, bone, alchemy,
   cook, crystal, ingredient1, ingredient2, ingredient3, ingredient4,
   ingredient5, ingredient6, ingredient7, ingredient8, result, resultHQ1,
   resultHQ2, resultHQ3, resultQty, resultHQ1Qty,
-  resultHQ2Qty, resultHQ3Qty, }) => {
+  resultHQ2Qty, resultHQ3Qty }) => {
 
   {result !== null ? result = result.replaceAll('_', ' ') : '';}
   {resultHQ1 !== null ? resultHQ1 = result.replaceAll('_', ' ') : '';}
