@@ -17,7 +17,7 @@ const Working = () => {
           <h2>Balgas Dais</h2>
           <p>Treasure and Tribulations (BS50)</p>
           <p>Wild Wild Whiskers (BS60)</p>
-          <p>sectionine Punishers (BS60)</p>
+          <p>Divine Punishers (BS60)</p>
           <p>Early Bird Catches the Wyrm (KS99)</p>
         </section>
         <section>
