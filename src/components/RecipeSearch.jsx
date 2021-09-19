@@ -1,46 +1,28 @@
 import React, { useState } from 'react';
-import { getRecipeSearch } from '../state/recipes';
-import Recipe from './Recipe';
-import recipeStyles from '../styles/recipes.css';
+import ResultSearch from './ResultSearch';
+import IngredientSearch from './IngredientSearch';
 import styles from '../styles/styles.css';
 
 const RecipeSearch = () => {
 
-  const [searchTerm, setSearchTerm] = useState('');
-  const [page, setPage] = useState(1);
-
-  const { searchedRecipes, loading } = getRecipeSearch(searchTerm, page);
-
-  if(loading) return <h1>Loading Recipes...</h1>;
-
-  const recipeElements = searchedRecipes.map((recipe) => (
-    <li key={recipe.id}> 
-      <Recipe {...recipe} />
-    </li>
-  ));
+  const [area, setArea] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
   };
 
-  const clear = (e) => {
-    e.target.value = '';
-  };
-
   return (
     <section className={styles.recipesList}>
-      <form onSubmit={handleSubmit} className={recipeStyles.searchForm}>
-        <input className={recipeStyles.searchInput} type="text" placeholder="search for a recipe" onFocus={((e) => clear(e))} onChange={((e) => setSearchTerm(e.target.value))} value={searchTerm}></input>
+      <form onSubmit={handleSubmit}>
+        <label> Search by Result: 
+          <input type="radio" name="searchBy" value={area} onChange={() => setArea('result')}></input>
+        </label>
+        <label> Search by Ingredient: 
+          <input type="radio" name="searchBy" value={area} onChange={() => setArea('ingredient')}></input>
+        </label>
       </form>
-      <section className={recipeStyles.listMeat}>
-        <ul className={recipeStyles.hlist}>{recipeElements}</ul>
-        <section>
-          <button className={recipeStyles.pagingButton} disabled={page <= 1} onClick={() => setPage((prevPage) => 
-            prevPage - 1)}>&lt;</button>
-          <button className={recipeStyles.pagingButton} disabled={searchedRecipes.length < 10} onClick={() => 
-            setPage((prevPage) => prevPage + 1)}>&gt;</button>
-        </section>
-      </section>
+      {area === 'result' ? <ResultSearch /> : <section></section> }
+      {area === 'ingredient' ? <IngredientSearch /> : <section></section> }
     </section>
   );
 };

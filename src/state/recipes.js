@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { fetchRecipeList, fetchRecipeSearch } from '../services/atavismAPI';
+import { fetchRecipeList, fetchRecipeResultSearch, fetchRecipeIngredientSearch } from '../services/atavismAPI';
 
 export const getRecipeList = (craft, minLevel, maxLevel, page) => {
 
@@ -16,18 +16,32 @@ export const getRecipeList = (craft, minLevel, maxLevel, page) => {
 
 };
 
-export const getRecipeSearch = (term, page) => {
+export const getRecipeResultSearch = (term, page) => {
 
-  const [loading, setLoading] = useState(true);
-  const [searchedRecipes, setSearchedRecipes] = useState([]);
+  const [loadingResults, setLoading] = useState(true);
+  const [searchedResultRecipes, setSearchedResultRecipes] = useState([]);
 
   useEffect(() => {
-    fetchRecipeSearch(term, page)
-      .then(setSearchedRecipes)
+    fetchRecipeResultSearch(term, page)
+      .then(setSearchedResultRecipes)
       .finally(() => setLoading(false));
   }, [term, page]);
 
-  return { searchedRecipes, loading };
+  return { searchedResultRecipes, loadingResults };
 
+};
+
+export const getRecipeIngredientSearch = (term, page) => {
+
+  const [loadingIngredients, setLoading] = useState(true);
+  const [searchedIngredientRecipes, setSearchedIngredientRecipes] = useState([]);
+
+  useEffect(() => {
+    fetchRecipeIngredientSearch(term, page)
+      .then(setSearchedIngredientRecipes)
+      .finally(() => setLoading(false));
+  }, [term, page]);
+
+  return { searchedIngredientRecipes, loadingIngredients };
 };
 
