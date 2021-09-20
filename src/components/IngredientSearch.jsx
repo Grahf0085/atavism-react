@@ -7,6 +7,7 @@ import styles from '../styles/styles.css';
 const IngredientSearch = () => {
 
   const [searchTerm, setSearchTerm] = useState('');
+  const [inputBox, setInputBox] = useState('');
   const [page, setPage] = useState(1);
 
   const { searchedIngredientRecipes, loadingIngredients } = getRecipeIngredientSearch(searchTerm, page);
@@ -21,16 +22,13 @@ const IngredientSearch = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-  };
-
-  const clear = (e) => {
-    e.target.value = '';
+    setSearchTerm(inputBox);
   };
 
   return (
     <section className={styles.recipesList}>
       <form onSubmit={handleSubmit} className={recipeStyles.searchForm}>
-        <input className={recipeStyles.searchInput} type="text" placeholder="search for a recipe" onFocus={((e) => clear(e))} onChange={((e) => setSearchTerm(e.target.value))} value={searchTerm}></input>
+        <input className={recipeStyles.searchInput} type="text" placeholder="search for a recipe" onChange={((e) => setInputBox(e.target.value))} value={inputBox}></input>
       </form>
       <section className={recipeStyles.listMeat}>
         <ul className={recipeStyles.hlist}>{recipeElements}</ul>
