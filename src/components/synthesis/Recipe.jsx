@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import recipeStyles from '../styles/recipes.css';
+import recipeStyles from '../../styles/recipes.css';
 
 const Recipe = ({ wood, smith, gold, cloth, leather, bone, alchemy, 
   cook, crystal, ingredient1, ingredient2, ingredient3, ingredient4,

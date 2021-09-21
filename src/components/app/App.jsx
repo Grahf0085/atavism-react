@@ -16,11 +16,11 @@ import Sidebar from '../../containers/SideBar';
 import ServerInfo from '../ServerInfo';
 import { backgroundFunction } from '../../services/utils';
 import styles from '../../styles/styles.css';
-import AdventurerList from '../AdventurerList';
-import AdventurerDetails from '../AdventurerDetails';
-import PlayerSearch from '../PlayerSearch';
-import RecipeByCraft from '../RecipeByCraft';
-import RecipeSearch from '../RecipeSearch';
+import AdventurerList from '../adventurer/AdventurerList';
+import AdventurerDetails from '../adventurer/AdventurerDetails';
+import PlayerSearch from '../adventurer/PlayerSearch';
+import RecipeByCraft from '../synthesis/RecipeByCraft';
+import RecipeSearch from '../synthesis/RecipeSearch';
 
 export default function App() {
 

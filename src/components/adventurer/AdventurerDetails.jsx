@@ -1,12 +1,12 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { getAdventurerDetails } from '../state/adventurers';
-import { formatAdventurer, jobConverter } from '../services/utils';
-import { advImage } from '../services/advImage';
-import titles from '../services/titles';
-import zones from '../services/zones';
-import detailstyles from '../styles/detailstyles.css';
-import styles from '../styles/styles.css';
+import { getAdventurerDetails } from '../../state/adventurers';
+import { formatAdventurer, jobConverter } from '../../services/utils';
+import { advImage } from '../../services/advImage';
+import titles from '../../services/titles';
+import zones from '../../services/zones';
+import detailstyles from '../../styles/detailstyles.css';
+import styles from '../../styles/styles.css';
 
 const AdventurerDetails = () => {
 

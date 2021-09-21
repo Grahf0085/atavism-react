@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { getAdventurerList } from '../state/adventurers';
+import { getAdventurerList } from '../../state/adventurers';
 import Adventurer from './Adventurer';
-import styles from '../styles/styles.css';
-import adventureListStyles from '../styles/adventurelist.css';
+import styles from '../../styles/styles.css';
+import adventureListStyles from '../../styles/adventurelist.css';
 
 const AdventurerList = () => {
 
