@@ -7,13 +7,14 @@ export const getAdventurerList = (page) => {
   const [adventurers, setAdventurers] = useState([]);
 
   useEffect(() => {
-    fetchAllAdventurers(page)
-      .then(setAdventurers)
-      .finally(() => setLoading(false));
+    const interval = setInterval(() => {
+      fetchAllAdventurers(page)
+        .then(setAdventurers)
+        .finally(() => setLoading(false));
+    }, 5000);
+    return () => clearInterval(interval);
   }, [page]);
-
   return { adventurers, loading };
-  
 };
 
 export const getAdventurerDetails = (name) => {
@@ -37,11 +38,13 @@ export const getNumberOnline = () => {
   const [numberOnline, setNumberOnline] = useState(0);
 
   useEffect(() => {
-    fetchNumberOnline()
-      .then(setNumberOnline)
-      .finally(() => setLoading(false));
+    const interval = setInterval(() => {
+      fetchNumberOnline()
+        .then(setNumberOnline)
+        .finally(() => setLoading(false));
+    }, 5000);
+    return () => clearInterval(interval);
   });
-
   return { numberOnline, loading };
 };
 
