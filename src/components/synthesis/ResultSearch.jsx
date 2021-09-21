@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { getRecipeResultSearch } from '../state/recipes';
+import { getRecipeResultSearch } from '../../state/recipes';
 import Recipe from './Recipe';
-import recipeStyles from '../styles/recipes.css';
-import styles from '../styles/styles.css';
+import recipeStyles from '../../styles/recipes.css';
+import styles from '../../styles/styles.css';
 
 const ResultSearch = () => {
 
