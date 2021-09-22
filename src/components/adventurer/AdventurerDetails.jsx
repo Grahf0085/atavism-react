@@ -69,6 +69,7 @@ const AdventurerDetails = () => {
             <p>Woodworking: {details.woodworking / 10}</p>
             <p>Smithing: {details.smithing / 10}</p>
             <p>Goldsmithing: {details.goldsmithing / 10}</p>
+            <p>Weaving: {details.weaving / 10}</p> 
             <p>Leathercraft: {details.leathercraft / 10}</p>
             <p>Bonecraft: {details.bonecraft / 10}</p>
             <p>Alchemy: {details.alchemy / 10}</p>
