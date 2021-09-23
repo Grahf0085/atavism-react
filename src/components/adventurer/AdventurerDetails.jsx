@@ -74,6 +74,7 @@ const AdventurerDetails = () => {
             <p>Bonecraft: {details.bonecraft / 10}</p>
             <p>Alchemy: {details.alchemy / 10}</p>
             <p>Cooking: {details.cooking / 10}</p>
+            <p>Digging: {details.digging / 10}</p>
           </section>
         </section>
       </section>
