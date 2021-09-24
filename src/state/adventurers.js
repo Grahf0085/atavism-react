@@ -11,7 +11,7 @@ export const getAdventurerList = (page) => {
       fetchAllAdventurers(page)
         .then(setAdventurers)
         .finally(() => setLoading(false));
-    }, 5000);
+    }, 3000);
     return () => clearInterval(interval);
   }, [page]);
   return { adventurers, loading };
@@ -42,7 +42,7 @@ export const getNumberOnline = () => {
       fetchNumberOnline()
         .then(setNumberOnline)
         .finally(() => setLoading(false));
-    }, 5000);
+    }, 3000);
     return () => clearInterval(interval);
   });
   return { numberOnline, loading };
