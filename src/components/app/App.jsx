@@ -29,7 +29,7 @@ export default function App() {
   });
   
   return (
-    <section className={styles.container}>
+    <section classNafme={styles.container}>
       <Header />
       <section className={styles.main}>
         <Router>
