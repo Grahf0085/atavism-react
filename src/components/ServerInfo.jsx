@@ -46,7 +46,7 @@ const Info = () => {
           <h2>Meta</h2>
           <li className={infoStyles.items}>
             <ol className={infoStyles.changedPart}>
-              <li className={infoStyles.items}>No Dual Boxing At This Time</li>
+              <li className={infoStyles.items}>Dual Boxing Allowed At This Time</li>
               <li className={infoStyles.items}>Level Sync: 10</li>
               <li className={infoStyles.items}>No Global Yell</li>
             </ol>
